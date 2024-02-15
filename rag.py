@@ -21,7 +21,7 @@ load_dotenv()
 
 # Accessing environment variables
 api_key = os.getenv('OPEN_AI_KEY')
-#print("API Key:", api_key)
+print("API Key:", api_key)
 
 app = Flask(__name__)
 
@@ -34,7 +34,7 @@ storage_context = StorageContext.from_defaults(persist_dir=PERSIST_DIR)
 index = load_index_from_storage(storage_context)
 
 # Setting up OpenAI language model
-llm = OpenAI(model="gpt-3.5-turbo", api_key=api_key, temperature=0.6)
+llm = OpenAI(model="gpt-3.5-turbo", api_key=os.environ["OPENAI_API_KEY"], temperature=0.6)
 
 # Setting up chat memory
 memory = ChatMemoryBuffer.from_defaults(token_limit=1500)
