@@ -368,3 +368,164 @@ INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.p
 INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
 INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
 INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000002BA5B6B28C0>, 'json_data': {'input': ['my name is emmanuel'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B6B4CA0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BA5A510540> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B6B4C70>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:38:09 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'53'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'197'), (b'x-ratelimit-remaining-tokens', b'149996'), (b'x-ratelimit-reset-requests', b'18m45.7s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_f6f0ee21ce7c9dc971d921c29f09a899'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=eyB.lwPjDeekGuwjUSt76f1FxectE2yxn._p2ZZt8t8-1708000689-1.0-ARN/cXjR5/g47kQuXRBq4+k/5uGz+ao8MUaV34qRmGWVbKgLTAPwiT0tJAfsGv8/PXEdsjG9hhgC6VlnOteIs2Y=; path=/; expires=Thu, 15-Feb-24 13:08:09 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=n6ufk3a.9uL3_RhV3nmv0og.0K4CMdRl344tCn5KbIU-1708000689726-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d9b354d950a79-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node b99c1371-41c5-4269-8562-6c518f9435b5] [Similarity score:             0.760356] 1 Free eBooks at Planet eBook.com‘I see.’
+‘My family all died and I came into a good deal of mon...
+> [Node df4168c4-2b9b-4a32-9dd5-ddba0b6b32ab] [Similarity score:             0.756316]  Free eBooks at Planet eBook.comthem: ‘Love, Nick,’ and all I could think of was how, when 
+tha...
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a chatbot, able to have normal interactions, as well as talk about the novel The Great Gatsby.\nContext information is below.\n--------------------\npage_label: 71\nfile_path: data\\the-great-gatsby.pdf\n\n\x181 Free eBooks at Planet eBook.com‘I see.’\n‘My family all died and I came into a good deal of mon -\ney.’\nHis voice was solemn as if the memory of that sud -\nden extinction of a clan still haunted him. For a moment \nI suspected that he was pulling my leg but a glance at him \nconvinced me otherwise.\n‘After that I lived like a young rajah in all the capitals \nof Europe—Paris, Venice, Rome—collecting jewels, chiefly \nrubies, hunting big game, painting a little, things for myself \nonly, and trying to forget something very sad that had hap -\npened to me long ago.’\nWith an effort I managed to restrain my incredulous \nlaughter. The very phrases were worn so threadbare that \nthey evoked no image except that of a turbaned ‘character’ \nleaking sawdust at every pore as he pursued a tiger through \nthe Bois de Boulogne.\n‘Then came the war, old sport. It was a great relief and \nI tried very hard to die but I seemed to bear an enchant -\ned life. I accepted a commission as first lieutenant when it \nbegan. In the Argonne Forest I took two machine-gun de -\ntachments so far forward that there was a half mile gap on \neither side of us where the infantry couldn’t advance. We \nstayed there two days and two nights, a hundred and thirty \nmen with sixteen Lewis guns, and when the infantry came \nup at last they found the insignia of three German divisions \namong the piles of dead. I was promoted to be a major and \nevery Allied government gave me a decoration—even Mon -\ntenegro, little Montenegro down on the Adriatic Sea!’\n\npage_label: 65\nfile_path: data\\the-great-gatsby.pdf\n\n\x18\x18 Free eBooks at Planet eBook.comthem: ‘Love, Nick,’ and all I could think of was how, when \nthat certain girl played tennis, a faint mustache of perspi -\nration appeared on her upper lip. Nevertheless there was a \nvague understanding that had to be tactfully broken off be -\nfore I was free.\nEvery one suspects himself of at least one of the cardinal \nvirtues, and this is mine: I am one of the few honest people \nthat I have ever known.\n--------------------\n'}, {'role': 'user', 'content': 'my name is emmanuel'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B729FF0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BA5A55E4C0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B729FC0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:38:11 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0613'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'790'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'197'), (b'x-ratelimit-remaining-tokens', b'39408'), (b'x-ratelimit-reset-requests', b'18m45.644s'), (b'x-ratelimit-reset-tokens', b'888ms'), (b'x-request-id', b'req_e8cc456a00387c405d631bda7bc48301'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=TyIrhdNau8VDzQKVpD9.lOnmUPK8S8aF_8efrBMFuyU-1708000691-1.0-AXAo3SM3B8WtxX8GZUZS/BbxPk6AT9b4aUSvtq7aRivCEeMPu2MWf8vtAc8T7WOtngI0tJuC2r507xu3uQ3pkl0=; path=/; expires=Thu, 15-Feb-24 13:08:11 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=ICDyY11Z9IC9OVKWAJmQjirD7V2spR_OVP2AeXj_snU-1708000691327-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d9b3a2f96b918-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: my name is emmanuel
+INFO:root:AI response: Hello Emmanuel! How can I assist you today?
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:38:11] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000002BA5B71FE20>, 'json_data': {'input': ['what is lesson learnt in the story?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B754D90>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BA5A510540> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B754D60>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:38:37 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'27'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'196'), (b'x-ratelimit-remaining-tokens', b'149992'), (b'x-ratelimit-reset-requests', b'25m29.733s'), (b'x-ratelimit-reset-tokens', b'3ms'), (b'x-request-id', b'req_fcb1315a51040ed22fb1733c5076c6db'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d9be41d6c1ca4-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node b99c1371-41c5-4269-8562-6c518f9435b5] [Similarity score:             0.792685] 1 Free eBooks at Planet eBook.com‘I see.’
+‘My family all died and I came into a good deal of mon...
+> [Node 0f3d0939-dc68-4376-97f4-8bed0dadada2] [Similarity score:             0.786688]  Free eBooks at Planet eBook.comChapter 1
+In my younger and more vulnerable years my father gave...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a chatbot, able to have normal interactions, as well as talk about the novel The Great Gatsby.\nContext information is below.\n--------------------\npage_label: 71\nfile_path: data\\the-great-gatsby.pdf\n\n\x181 Free eBooks at Planet eBook.com‘I see.’\n‘My family all died and I came into a good deal of mon -\ney.’\nHis voice was solemn as if the memory of that sud -\nden extinction of a clan still haunted him. For a moment \nI suspected that he was pulling my leg but a glance at him \nconvinced me otherwise.\n‘After that I lived like a young rajah in all the capitals \nof Europe—Paris, Venice, Rome—collecting jewels, chiefly \nrubies, hunting big game, painting a little, things for myself \nonly, and trying to forget something very sad that had hap -\npened to me long ago.’\nWith an effort I managed to restrain my incredulous \nlaughter. The very phrases were worn so threadbare that \nthey evoked no image except that of a turbaned ‘character’ \nleaking sawdust at every pore as he pursued a tiger through \nthe Bois de Boulogne.\n‘Then came the war, old sport. It was a great relief and \nI tried very hard to die but I seemed to bear an enchant -\ned life. I accepted a commission as first lieutenant when it \nbegan. In the Argonne Forest I took two machine-gun de -\ntachments so far forward that there was a half mile gap on \neither side of us where the infantry couldn’t advance. We \nstayed there two days and two nights, a hundred and thirty \nmen with sixteen Lewis guns, and when the infantry came \nup at last they found the insignia of three German divisions \namong the piles of dead. I was promoted to be a major and \nevery Allied government gave me a decoration—even Mon -\ntenegro, little Montenegro down on the Adriatic Sea!’\n\npage_label: 3\nfile_path: data\\the-great-gatsby.pdf\n\n\x18 Free eBooks at Planet eBook.comChapter 1\nIn my younger and more vulnerable years my father gave \nme some advice that I’ve been turning over in my mind \never since.\n‘Whenever you feel like criticizing any one,’ he told me, \n‘just remember that all the people in this world haven’t had \nthe advantages that you’ve had.’\nHe didn’t say any more but we’ve always been unusually \ncommunicative in a reserved way, and I understood that he \nmeant a great deal more than that. In consequence I’m in -\nclined to reserve all judgments, a habit that has opened up \nmany curious natures to me and also made me the victim \nof not a few veteran bores. The abnormal mind is quick to \ndetect and attach itself to this quality when it appears in a \nnormal person, and so it came about that in college I was \nunjustly accused of being a politician, because I was privy \nto the secret griefs of wild, unknown men. Most of the con -\nfidences were unsought—frequently I have feigned sleep, \npreoccupation, or a hostile levity when I realized by some \nunmistakable sign that an intimate revelation was quiver -\ning on the horizon—for the intimate revelations of young \nmen or at least the terms in which they express them are \nusually plagiaristic and marred by obvious suppressions. \nReserving judgments is a matter of infinite hope. I am still \na little afraid of missing something if I forget that, as my fa -\n--------------------\n'}, {'role': 'user', 'content': 'my name is emmanuel'}, {'role': 'assistant', 'content': 'Hello Emmanuel! How can I assist you today?'}, {'role': 'user', 'content': 'what is lesson learnt in the story?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B758340>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BA5A55E4C0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B758040>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:38:47 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0613'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'8409'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'196'), (b'x-ratelimit-remaining-tokens', b'39144'), (b'x-ratelimit-reset-requests', b'25m29.538s'), (b'x-ratelimit-reset-tokens', b'1.284s'), (b'x-request-id', b'req_4b4cce9ef61aea28eb81861b0faf1687'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d9be84bcc6615-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: what is lesson learnt in the story?
+INFO:root:AI response: In the novel "The Great Gatsby," there are several lessons that can be learned. One of the main lessons is the emptiness and futility of the pursuit of wealth and material possessions. The characters in the story, particularly Jay Gatsby, are driven by their desire for wealth and social status, believing that it will bring them happiness and fulfillment. However, they soon discover that even with all their wealth and lavish parties, they are still left feeling empty and unsatisfied.
+
+Another lesson is the illusion of the American Dream. The characters in the novel are all striving to achieve their own versions of the American Dream, which is often associated with wealth, success, and social mobility. However, Fitzgerald portrays the American Dream as a corrupt and unattainable ideal, as the characters' pursuit of it leads to moral decay, disillusionment, and tragedy.
+
+Additionally, the novel explores the theme of the impossibility of recapturing the past. Gatsby's obsession with his past love, Daisy Buchanan, and his attempts to recreate their relationship highlight the futility of trying to relive or recreate past experiences. This serves as a reminder that the past cannot be changed or recaptured, and that dwelling on it can lead to destructive consequences.
+
+Overall, "The Great Gatsby" teaches us about the dangers of materialism, the illusory nature of the American Dream, and the impossibility of recapturing the past.
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:38:46] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000002BA5B71DF30>, 'json_data': {'input': ['what is my name?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B72AA40>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BA5A510540> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B72A530>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:40:55 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'20'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'195'), (b'x-ratelimit-remaining-tokens', b'149995'), (b'x-ratelimit-reset-requests', b'30m23.487s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_3f9d313088f8c0d4e376b5a58dba6317'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d9f441902b986-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node df4168c4-2b9b-4a32-9dd5-ddba0b6b32ab] [Similarity score:             0.770408]  Free eBooks at Planet eBook.comthem: ‘Love, Nick,’ and all I could think of was how, when 
+tha...
+> [Node 8e0a1c22-4711-42f8-b196-0459ee5f94b5] [Similarity score:             0.76294] 1 Free eBooks at Planet eBook.com‘Nick?’ He asked again.
+‘What?’
+‘Want any?’
+‘No … I just remem...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a chatbot, able to have normal interactions, as well as talk about the novel The Great Gatsby.\nContext information is below.\n--------------------\npage_label: 65\nfile_path: data\\the-great-gatsby.pdf\n\n\x18\x18 Free eBooks at Planet eBook.comthem: ‘Love, Nick,’ and all I could think of was how, when \nthat certain girl played tennis, a faint mustache of perspi -\nration appeared on her upper lip. Nevertheless there was a \nvague understanding that had to be tactfully broken off be -\nfore I was free.\nEvery one suspects himself of at least one of the cardinal \nvirtues, and this is mine: I am one of the few honest people \nthat I have ever known.\n\npage_label: 145\nfile_path: data\\the-great-gatsby.pdf\n\n1\x18\x18 Free eBooks at Planet eBook.com‘Nick?’ He asked again.\n‘What?’\n‘Want any?’\n‘No … I just remembered that today’s my birthday.’\nI was thirty. Before me stretched the portentous menac -\ning road of a new decade.\nIt was seven o’clock when we got into the coupé with him \nand started for Long Island. Tom talked incessantly, exult -\ning and laughing, but his voice was as remote from Jordan \nand me as the foreign clamor on the sidewalk or the tumult \nof the elevated overhead. Human sympathy has its limits \nand we were content to let all their tragic arguments fade \nwith the city lights behind. Thirty—the promise of a decade \nof loneliness, a thinning list of single men to know, a thin -\nning brief-case of enthusiasm, thinning hair. But there was \nJordan beside me who, unlike Daisy, was too wise ever to \ncarry well-forgotten dreams from age to age. As we passed \nover the dark bridge her wan face fell lazily against my coat’s \nshoulder and the formidable stroke of thirty died away with \nthe reassuring pressure of her hand.\nSo we drove on toward death through the cooling twi -\nlight.\nThe young Greek, Michaelis, who ran the coffee joint be -\nside the ashheaps was the principal witness at the inquest. \nHe had slept through the heat until after five, when he \nstrolled over to the garage and found George Wilson sick in \nhis office—really sick, pale as his own pale hair and shaking \nall over. Michaelis advised him to go to bed but Wilson re -\nfused, saying that he’d miss a lot of business if he did. While\n--------------------\n'}, {'role': 'user', 'content': 'my name is emmanuel'}, {'role': 'assistant', 'content': 'Hello Emmanuel! How can I assist you today?'}, {'role': 'user', 'content': 'what is lesson learnt in the story?'}, {'role': 'assistant', 'content': 'In the novel "The Great Gatsby," there are several lessons that can be learned. One of the main lessons is the emptiness and futility of the pursuit of wealth and material possessions. The characters in the story, particularly Jay Gatsby, are driven by their desire for wealth and social status, believing that it will bring them happiness and fulfillment. However, they soon discover that even with all their wealth and lavish parties, they are still left feeling empty and unsatisfied.\n\nAnother lesson is the illusion of the American Dream. The characters in the novel are all striving to achieve their own versions of the American Dream, which is often associated with wealth, success, and social mobility. However, Fitzgerald portrays the American Dream as a corrupt and unattainable ideal, as the characters\' pursuit of it leads to moral decay, disillusionment, and tragedy.\n\nAdditionally, the novel explores the theme of the impossibility of recapturing the past. Gatsby\'s obsession with his past love, Daisy Buchanan, and his attempts to recreate their relationship highlight the futility of trying to relive or recreate past experiences. This serves as a reminder that the past cannot be changed or recaptured, and that dwelling on it can lead to destructive consequences.\n\nOverall, "The Great Gatsby" teaches us about the dangers of materialism, the illusory nature of the American Dream, and the impossibility of recapturing the past.'}, {'role': 'user', 'content': 'what is my name?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5B7583D0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BA5A55E4C0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BA5A541A50>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:40:57 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0613'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'530'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'195'), (b'x-ratelimit-remaining-tokens', b'39019'), (b'x-ratelimit-reset-requests', b'30m23.512s'), (b'x-ratelimit-reset-tokens', b'1.471s'), (b'x-request-id', b'req_27de3fa563fdc794e147c34d4764c92a'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d9f486c7b670a-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: what is my name?
+INFO:root:AI response: Your name is Emmanuel.
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:40:56] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:43:01] "GET / HTTP/1.1" 200 -
