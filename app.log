@@ -1,0 +1,370 @@
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:21:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:21:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:21:48] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:24:50] "GET / HTTP/1.1" 200 -
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x0000020B8C6A7760>, 'json_data': {'input': ['Hi'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020B8D81D240>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020B8C6AC740> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020B8D81D210>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:24:57 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'24'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-remaining-requests', b'199'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-request-id', b'req_bdedd50428640f01c14f513f0a7684b3'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=isCYkchoyvluj6uPaHXIzzOun1Dumo59tZfvk7E8TJw-1707999897-1.0-AfLBDAgY0ey81My9robQT3tDPkuxoosKlYrulQh5QcJKLkVw3FSbErjnZYke0zfs2HjLr4WhSM+4YXShd88jeNE=; path=/; expires=Thu, 15-Feb-24 12:54:57 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=6JjN.WYurL.6F.F89DaNDD.H_vci22BuZchhF5M.NYY-1707999897455-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d87dd4bd06699-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 04fc99fd-6689-4b95-aa8e-145890551244] [Similarity score:             0.774162]  Free eBooks at Planet eBook.comunnaturally loud across the garden.
+‘I thought you might be her...
+> [Node 1859ecfc-16f2-441e-a510-0259c3c3f27e] [Similarity score:             0.769987] 1 Free eBooks at Planet eBook.comsomewhere last night. I’ve been drunk for about a week now, 
+an...
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a chatbot, able to have normal interactions, as well as talk about the novel The Great Gatsby.\nContext information is below.\n--------------------\npage_label: 47\nfile_path: data\\the-great-gatsby.pdf\n\n\x18\x18 Free eBooks at Planet eBook.comunnaturally loud across the garden.\n‘I thought you might be here,’ she responded absently as I \ncame up. ‘I remembered you lived next door to——‘\nShe held my hand impersonally, as a promise that she’d \ntake care of me in a minute, and gave ear to two girls in twin \nyellow dresses who stopped at the foot of the steps.\n‘Hello!’ they cried together. ‘Sorry you didn’t win.’\nThat was for the golf tournament. She had lost in the fi -\nnals the week before.\n‘You don’t know who we are,’ said one of the girls in yel -\nlow, ‘but we met you here about a month ago.’\n‘You’ve dyed your hair since then,’ remarked Jordan, and \nI started but the girls had moved casually on and her re -\nmark was addressed to the premature moon, produced like \nthe supper, no doubt, out of a caterer’s basket. With Jordan’s \nslender golden arm resting in mine we descended the steps \nand sauntered about the garden. A tray of cocktails floated \nat us through the twilight and we sat down at a table with \nthe two girls in yellow and three men, each one introduced \nto us as Mr. Mumble.\n‘Do you come to these parties often?’ inquired Jordan of \nthe girl beside her.\n‘The last one was the one I met you at,’ answered the girl, \nin an alert, confident voice. She turned to her companion: \n‘Wasn’t it for you, Lucille?’\nIt was for Lucille, too.\n‘I like to come,’ Lucille said. ‘I never care what I do, so \nI always have a good time. When I was here last I tore my \ngown on a chair, and he asked me my name and address—\n\npage_label: 51\nfile_path: data\\the-great-gatsby.pdf\n\n\x181 Free eBooks at Planet eBook.comsomewhere last night. I’ve been drunk for about a week now, \nand I thought it might sober me up to sit in a library.’\n‘Has it?’\n‘A little bit, I think. I can’t tell yet. I’ve only been here an \nhour. Did I tell you about the books? They’re real. They’re—\n—‘\n‘You told us.’\nWe shook hands with him gravely and went back out -\ndoors.\nThere was dancing now on the canvas in the garden, \nold men pushing young girls backward in eternal grace -\nless circles, superior couples holding each other tortuously, \nfashionably and keeping in the corners—and a great num -\nber of single girls dancing individualistically or relieving \nthe orchestra for a moment of the burden of the banjo or the \ntraps. By midnight the hilarity had increased. A celebrated \ntenor had sung in Italian and a notorious contralto had sung \nin jazz and between the numbers people were doing ‘stunts’ \nall over the garden, while happy vacuous bursts of laughter \nrose toward the summer sky. A pair of stage ‘twins’—who \nturned out to be the girls in yellow—did a baby act in cos -\ntume and champagne was served in glasses bigger than \nfinger bowls. The moon had risen higher, and floating in the \nSound was a triangle of silver scales, trembling a little to the \nstiff, tinny drip of the banjoes on the lawn.\nI was still with Jordan Baker. We were sitting at a table \nwith a man of about my age and a rowdy little girl who gave \nway upon the slightest provocation to uncontrollable laugh -\nter. I was enjoying myself now. I had taken two finger bowls\n--------------------\n'}, {'role': 'user', 'content': 'Hi'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020B8D88E560>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000020B8C6639C0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000020B8D88E530>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:24:59 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0613'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'703'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'199'), (b'x-ratelimit-remaining-tokens', b'39116'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'1.326s'), (b'x-request-id', b'req_73a45813cca905ad9b204c23b9826155'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=StE_Fkf8Q_hV27ot2QGKeoIzqnOdr1D0pJwF.awdAHI-1707999899-1.0-ARgzSNLclm4krSTJv9BN/ZEmKPbtiQWNxAS5ioXzhutvXpc/Bb00A9V6NQ4zRZSC3E9RUMr7X3akL52EULlId+o=; path=/; expires=Thu, 15-Feb-24 12:54:59 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=zvBpTyZAw5LxbyXVR5eactuhNoCYi_EN4vz1FSm52BY-1707999899035-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d87e26cdd1e6d-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:24:58] "[35m[1mPOST /chat HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:35:11] "GET / HTTP/1.1" 200 -
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x00000182E7CA8160>, 'json_data': {'input': ['Hi'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000182E8E1D330>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x00000182E7CAC640> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000182E8E1D300>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:35:19 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'18'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-remaining-requests', b'199'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-request-id', b'req_1da92ff14d0dbd3fa32d0a2f00d4b21b'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=YTlSJmXniEgeIICw1XAiTKOXeZA6Z5UGkGBaJ7Bzam8-1708000519-1.0-Aa3ZFtwu1WNfWoQKJ0KnNXsnPlnbxj721zzW9utNEykv42+y0B8Y/ad71dr2O/C2WZEBh89zBQc6s43yl2/TqvQ=; path=/; expires=Thu, 15-Feb-24 13:05:19 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=SivRmb9PULQxGL4Bo0.5leGVZgAOn7LhFoedESyY6lw-1708000519393-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d970cfcaa66da-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 04fc99fd-6689-4b95-aa8e-145890551244] [Similarity score:             0.774162]  Free eBooks at Planet eBook.comunnaturally loud across the garden.
+‘I thought you might be her...
+> [Node 1859ecfc-16f2-441e-a510-0259c3c3f27e] [Similarity score:             0.769987] 1 Free eBooks at Planet eBook.comsomewhere last night. I’ve been drunk for about a week now, 
+an...
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a chatbot, able to have normal interactions, as well as talk about the novel The Great Gatsby.\nContext information is below.\n--------------------\npage_label: 47\nfile_path: data\\the-great-gatsby.pdf\n\n\x18\x18 Free eBooks at Planet eBook.comunnaturally loud across the garden.\n‘I thought you might be here,’ she responded absently as I \ncame up. ‘I remembered you lived next door to——‘\nShe held my hand impersonally, as a promise that she’d \ntake care of me in a minute, and gave ear to two girls in twin \nyellow dresses who stopped at the foot of the steps.\n‘Hello!’ they cried together. ‘Sorry you didn’t win.’\nThat was for the golf tournament. She had lost in the fi -\nnals the week before.\n‘You don’t know who we are,’ said one of the girls in yel -\nlow, ‘but we met you here about a month ago.’\n‘You’ve dyed your hair since then,’ remarked Jordan, and \nI started but the girls had moved casually on and her re -\nmark was addressed to the premature moon, produced like \nthe supper, no doubt, out of a caterer’s basket. With Jordan’s \nslender golden arm resting in mine we descended the steps \nand sauntered about the garden. A tray of cocktails floated \nat us through the twilight and we sat down at a table with \nthe two girls in yellow and three men, each one introduced \nto us as Mr. Mumble.\n‘Do you come to these parties often?’ inquired Jordan of \nthe girl beside her.\n‘The last one was the one I met you at,’ answered the girl, \nin an alert, confident voice. She turned to her companion: \n‘Wasn’t it for you, Lucille?’\nIt was for Lucille, too.\n‘I like to come,’ Lucille said. ‘I never care what I do, so \nI always have a good time. When I was here last I tore my \ngown on a chair, and he asked me my name and address—\n\npage_label: 51\nfile_path: data\\the-great-gatsby.pdf\n\n\x181 Free eBooks at Planet eBook.comsomewhere last night. I’ve been drunk for about a week now, \nand I thought it might sober me up to sit in a library.’\n‘Has it?’\n‘A little bit, I think. I can’t tell yet. I’ve only been here an \nhour. Did I tell you about the books? They’re real. They’re—\n—‘\n‘You told us.’\nWe shook hands with him gravely and went back out -\ndoors.\nThere was dancing now on the canvas in the garden, \nold men pushing young girls backward in eternal grace -\nless circles, superior couples holding each other tortuously, \nfashionably and keeping in the corners—and a great num -\nber of single girls dancing individualistically or relieving \nthe orchestra for a moment of the burden of the banjo or the \ntraps. By midnight the hilarity had increased. A celebrated \ntenor had sung in Italian and a notorious contralto had sung \nin jazz and between the numbers people were doing ‘stunts’ \nall over the garden, while happy vacuous bursts of laughter \nrose toward the summer sky. A pair of stage ‘twins’—who \nturned out to be the girls in yellow—did a baby act in cos -\ntume and champagne was served in glasses bigger than \nfinger bowls. The moon had risen higher, and floating in the \nSound was a triangle of silver scales, trembling a little to the \nstiff, tinny drip of the banjoes on the lawn.\nI was still with Jordan Baker. We were sitting at a table \nwith a man of about my age and a rowdy little girl who gave \nway upon the slightest provocation to uncontrollable laugh -\nter. I was enjoying myself now. I had taken two finger bowls\n--------------------\n'}, {'role': 'user', 'content': 'Hi'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000182E8E92620>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x00000182E7CAF4C0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000182E8E925F0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:35:20 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0613'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'679'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'199'), (b'x-ratelimit-remaining-tokens', b'39116'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'1.326s'), (b'x-request-id', b'req_e68e71a40b22899e3e51475d821056f8'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=hFDjw2jUdXfDIjuGnMQ78xKH7gDF.4GOlgzgANa1miQ-1708000520-1.0-AZdihg0EYKSynkTYKiHLNI9slpOFSI+AKBsq7xC3XWOh8R2kHqsJxxzIum8c6JRs3pz9TmONolJZBgksZvY3tAk=; path=/; expires=Thu, 15-Feb-24 13:05:20 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=aXogDeagSWL26LtZ1Y0LljyNI_D0OaUSwqmqboZSPOY-1708000520874-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d97117d50b908-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: Hi
+INFO:root:AI response: Hello! How can I assist you today?
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:35:20] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x00000182E8EAF760>, 'json_data': {'input': ['who is Gatsby?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000182E8EC0EE0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x00000182E7CAC640> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000182E8EC0EB0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:35:33 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'230'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'198'), (b'x-ratelimit-remaining-tokens', b'149997'), (b'x-ratelimit-reset-requests', b'14m9.82s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_5f0703ec4eaacfc9e621bbdb387b71d9'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d9765aab86575-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node c256b145-a8cb-4f24-9827-1e933093ff1e] [Similarity score:             0.852583]  Free eBooks at Planet eBook.com‘I thought you knew, old sport. I’m afraid I’m not a very 
+good...
+> [Node 635c3060-1bb2-409b-a913-20daf66011e3] [Similarity score:             0.850997] 10 Free eBooks at Planet eBook.comhe saw Dan Cody’s yacht drop anchor over the most insidi -
+ous...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a chatbot, able to have normal interactions, as well as talk about the novel The Great Gatsby.\nContext information is below.\n--------------------\npage_label: 53\nfile_path: data\\the-great-gatsby.pdf\n\n\x18\x18 Free eBooks at Planet eBook.com‘I thought you knew, old sport. I’m afraid I’m not a very \ngood host.’\nHe smiled understandingly—much more than under -\nstandingly. It was one of those rare smiles with a quality of \neternal reassurance in it, that you may come across four or \nfive times in life. It faced—or seemed to face—the whole ex -\nternal world for an instant, and then concentrated on YOU \nwith an irresistible prejudice in your favor. It understood \nyou just so far as you wanted to be understood, believed \nin you as you would like to believe in yourself and assured \nyou that it had precisely the impression of you that, at your \nbest, you hoped to convey. Precisely at that point it van -\nished—and I was looking at an elegant young rough-neck, a \nyear or two over thirty, whose elaborate formality of speech \njust missed being absurd. Some time before he introduced \nhimself I’d got a strong impression that he was picking his \nwords with care.\nAlmost at the moment when Mr. Gatsby identified him -\nself a butler hurried toward him with the information that \nChicago was calling him on the wire. He excused himself \nwith a small bow that included each of us in turn.\n‘If you want anything just ask for it, old sport,’ he urged \nme. ‘Excuse me. I will rejoin you later.’\nWhen he was gone I turned immediately to Jordan—\nconstrained to assure her of my surprise. I had expected \nthat Mr. Gatsby would be a florid and corpulent person in \nhis middle years.\n‘Who is he?’ I demanded. ‘Do you know?’\n‘He’s just a man named Gatsby.’\n\npage_label: 105\nfile_path: data\\the-great-gatsby.pdf\n\n10\x18 Free eBooks at Planet eBook.comhe saw Dan Cody’s yacht drop anchor over the most insidi -\nous flat on Lake Superior. It was James Gatz who had been \nloafing along the beach that afternoon in a torn green jer -\nsey and a pair of canvas pants, but it was already Jay Gatsby \nwho borrowed a row-boat, pulled out to the TUOLOMEE \nand informed Cody that a wind might catch him and break \nhim up in half an hour.\nI suppose he’d had the name ready for a long time, even \nthen. His parents were shiftless and unsuccessful farm peo -\nple—his imagination had never really accepted them as \nhis parents at all. The truth was that Jay Gatsby, of West \nEgg, Long Island, sprang from his Platonic conception of \nhimself. He was a son of God—a phrase which, if it means \nanything, means just that—and he must be about His \nFather’s Business, the service of a vast, vulgar and meretri -\ncious beauty. So he invented just the sort of Jay Gatsby that \na seventeen-year-old boy would be likely to invent, and to \nthis conception he was faithful to the end.\nFor over a year he had been beating his way along the \nsouth shore of Lake Superior as a clam digger and a salmon \nfisher or in any other capacity that brought him food and \nbed. His brown, hardening body lived naturally through \nthe half fierce, half lazy work of the bracing days. He knew \nwomen early and since they spoiled him he became con -\ntemptuous of them, of young virgins because they were \nignorant, of the others because they were hysterical about \nthings which in his overwhelming self-absorption he took \nfor granted.\nBut his heart was in a constant, turbulent riot. The most\n--------------------\n'}, {'role': 'user', 'content': 'Hi'}, {'role': 'assistant', 'content': 'Hello! How can I assist you today?'}, {'role': 'user', 'content': 'who is Gatsby?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000182E7C99990>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x00000182E7CAF4C0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000182E8E1DBA0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Thu, 15 Feb 2024 12:35:38 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0613'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'4408'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'198'), (b'x-ratelimit-remaining-tokens', b'39090'), (b'x-ratelimit-reset-requests', b'14m9.617s'), (b'x-ratelimit-reset-tokens', b'1.365s'), (b'x-request-id', b'req_501596fd1c078fe53befa5989d5b400c'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'855d976b5cd80bda-AMS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: who is Gatsby?
+INFO:root:AI response: Gatsby is the main character in the novel "The Great Gatsby" by F. Scott Fitzgerald. He is a wealthy and mysterious man who lives in West Egg, Long Island. Gatsby is known for throwing extravagant parties and is surrounded by rumors and speculation about his past. The story revolves around his pursuit of Daisy Buchanan, his former love interest, and his attempts to win her back. Gatsby represents the American Dream and the themes of wealth, love, and the corruption of the upper class are explored through his character.
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 13:35:38] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\app2.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\test.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
