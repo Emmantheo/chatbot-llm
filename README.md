@@ -7,3 +7,6 @@ Contextual Knowledge is key when building chatbot for an organisation or enterpr
 Most organisations have a good knowledge base with no technology to harness them for the benefit of the organisation. 
 With this application proves this kind of organisational knowledge can be contextualise, loaded, embedded, indexed and 
 retrieved for use in form of simple knowledge retriever or chatbot application. 
+
+app.py file is a generic LLM chatbot application.
+rag.py is a chatbot application built on a document.
