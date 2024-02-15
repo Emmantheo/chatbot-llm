@@ -14,7 +14,7 @@
         }
 
         .chat-container {
-            max-width: 1000px;
+            max-width:1000px;
             margin: auto;
             overflow: hidden;
         }
@@ -149,7 +149,6 @@
                 appendAIMessage(aiResponse);
             })
             .catch(error => console.error('Error:', error));
-
         }
     
         function appendUserMessage(message) {
@@ -167,14 +166,8 @@
             aiMessageDiv.className = "message";
             aiMessageDiv.innerHTML = '<div class="ai-message">' + message + '</div>';
             chatMessages.appendChild(aiMessageDiv);
-
         }
-
-        function clearChat() {
-        var chatMessages = document.getElementById("chatMessages");
-        chatMessages.innerHTML = "";
-        }
-
+    
         function clearChat() {
             var confirmation = confirm("Are you sure you want to clear the chat?");
             if (confirmation) {
@@ -182,10 +175,18 @@
                 chatMessages.innerHTML = "";
             }
         }
-
-
-
+    
+        // Function to send message when Enter key is pressed
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+    
+        // Add event listener to input field to detect Enter key press
+        document.getElementById("userInput").addEventListener("keypress", handleKeyPress);
     </script>
+    
     
 
 </body>
