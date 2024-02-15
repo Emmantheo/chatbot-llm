@@ -9,4 +9,6 @@ With this application proves this kind of organisational knowledge can be contex
 retrieved for use in form of simple knowledge retriever or chatbot application. 
 
 app.py file is a generic LLM chatbot application.
+
+
 rag.py is a chatbot application built on a document.
