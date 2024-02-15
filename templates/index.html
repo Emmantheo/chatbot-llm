@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eadddd;
+        }
+
+        .chat-container {
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .chat-box {
+            background-color: #0f0b0b;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-header {
+            background-color: #984caf;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .chat-messages {
+            padding: 15px;
+            overflow-y: auto;
+            height: 400px;
+        }
+
+        .message {
+            margin-bottom: 10px; /* Adjust the margin between messages as needed */
+            overflow: auto; /* Add overflow to handle long messages */
+        }
+
+        .user-message,
+        .ai-message {
+            margin-bottom: 5px; /* Adjust the margin between the message content and its container */
+        }
+
+        .user-message::after,
+        .ai-message::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .user-message {
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            max-width: 70%;
+            word-wrap: break-word;
+            float: left;
+        }
+
+        .ai-message {
+            background-color: #008CBA;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            max-width: 70%;
+            word-wrap: break-word;
+            float: right;
+        }
+
+        .input-container {
+            padding: 15px;
+            background-color: #eee;
+            border-top: 1px solid #ddd;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .send-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .clear-button {
+            background-color: #af4c5c;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chat-container">
+        <div class="chat-box">
+            <div class="chat-header">Chatbot</div>
+            <div class="chat-messages" id="chatMessages">
+                <!-- Chat messages will appear here -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="userInput" class="input-box" placeholder="Type your message...">
+                <button onclick="sendMessage()" class="send-button">Send</button>
+                <button onclick="clearChat()" class="clear-button">Clear Chat</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById("userInput").value;
+            appendUserMessage(userInput);
+    
+            // Send user input to the server and get the AI response
+            fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ input: userInput }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                var aiResponse = data.response;
+                appendAIMessage(aiResponse);
+            })
+            .catch(error => console.error('Error:', error));
+
+        }
+    
+        function appendUserMessage(message) {
+            var chatMessages = document.getElementById("chatMessages");
+            var userMessageDiv = document.createElement("div");
+            userMessageDiv.className = "message";
+            userMessageDiv.innerHTML = '<div class="user-message">' + message + '</div>';
+            chatMessages.appendChild(userMessageDiv);
+            document.getElementById("userInput").value = "";
+        }
+    
+        function appendAIMessage(message) {
+            var chatMessages = document.getElementById("chatMessages");
+            var aiMessageDiv = document.createElement("div");
+            aiMessageDiv.className = "message";
+            aiMessageDiv.innerHTML = '<div class="ai-message">' + message + '</div>';
+            chatMessages.appendChild(aiMessageDiv);
+
+        }
+
+        function clearChat() {
+        var chatMessages = document.getElementById("chatMessages");
+        chatMessages.innerHTML = "";
+        }
+
+        function clearChat() {
+            var confirmation = confirm("Are you sure you want to clear the chat?");
+            if (confirmation) {
+                var chatMessages = document.getElementById("chatMessages");
+                chatMessages.innerHTML = "";
+            }
+        }
+
+
+
+    </script>
+    
+
+</body>
+
+</html>
