@@ -1,5 +1,5 @@
 import os
-os.environ["OPENAI_API_KEY"] = os.getenv('OPEN_AI_KEY')
+os.environ["OPENAI_API_KEY"] = str(os.getenv("OPEN_AI_KEY"))
 
 from flask import Flask, render_template, request, jsonify
 from langchain.schema import HumanMessage, SystemMessage, AIMessage
@@ -24,6 +24,12 @@ api_key = os.getenv('OPEN_AI_KEY')
 print("API Key:", api_key)
 
 app = Flask(__name__)
+
+
+# Accessing environment variables
+host_no = os.getenv("host")
+port_no = os.getenv("port")
+debug_mode = os.getenv("DEBUG") 
 
 # Setting up logging
 logging.basicConfig(filename='app.log', level=logging.DEBUG)
@@ -97,4 +103,4 @@ def chat():
     return jsonify({'response': response, 'messages': messages})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=debug_mode, host=host_no, port=port_no)
