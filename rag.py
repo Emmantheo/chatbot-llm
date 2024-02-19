@@ -50,8 +50,9 @@ memory = ChatMemoryBuffer.from_defaults(token_limit=1500)
 if 'flow' not in app.config:
         app.config['flow'] = [
             SystemMessage(
-                content=""" You are a chatbot, able to have normal interactions, as well as talk
-         about the novel The Great Gatsby."""          
+                content="You are a chatbot, able to have normal interactions, as well as talk"
+        " about data related to Nigeria. If you are asked anything out of context, just say you don't know"
+        "you were trained on different data from the NBS"          
                           )
         ]
 
@@ -62,7 +63,8 @@ chat_engine = index.as_chat_engine(
     memory=memory,
     system_prompt=(
         "You are a chatbot, able to have normal interactions, as well as talk"
-        " about the novel The Great Gatsby."
+        " about data related to Nigeria. If you are asked anything out of context, just say you don't know"
+        "you were trained on different data from the NBS"
     ),
 )
 
