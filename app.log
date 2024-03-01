@@ -4068,3 +4068,1114 @@ DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/comp
 INFO:root:User question: i mean accident.
 INFO:root:AI response: The report provided does not contain information specifically about rail transport accidents in Q3 2023. It primarily focuses on road transport data, including road traffic crashes and related statistics.
 INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 08:52:00] "POST /chat HTTP/1.1" 200 -
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.217:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 13:57:00] "GET / HTTP/1.1" 200 -
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000001AA6E00CC10>, 'json_data': {'input': ["who's daisy?"], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6E0316C0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AA6DFDBDC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6E031690>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 12:57:13 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'20'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'199'), (b'x-ratelimit-remaining-tokens', b'149997'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_08ebe12534cc0af99e8b68ffca2f115c'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=3.Ydy.TJdxnQKW8FCQIWBCIiKDAOooGURzMeUPiA3Kw-1708261033-1.0-ASeiaRi85o2rCQBB+8badLw/jUjfP/zJD2Qs0zhRYS4beSAEyDMESPEjNZTyIZxp+i6pz4fBYUkmEQGsh1RND/g=; path=/; expires=Sun, 18-Feb-24 13:27:13 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=rTkWYmDcnh9Rr9Ne1QizCQnabRuSukUAaj_O.h8eDKU-1708261033925-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85766f43fbfed7b1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 22d26019-a536-470f-8040-d1a1e5167c62] [Similarity score:             0.692614] 4  
+KEY HIGHLIGHTS  
+Total customer numbers in Q3 2023 stood at 11.71 million from 11.47 million ...
+> [Node eb1f9d08-fb52-48c8-a4ee-7a3aac8c3153] [Similarity score:             0.688632] Report Date: January 2024   
+Nigeria Electricity Report :  
+Energy Billed, Revenue Generated  
+An...
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria.\nContext information is below.\n--------------------\npage_label: Page 4\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\n4  \nKEY HIGHLIGHTS  \nTotal customer numbers in Q3 2023 stood at 11.71 million from 11.47 million in Q2 2023, \nshowing an increase of 2.08%. On a year -on-year basis, customer numbers in Q3 2023 rose \nby 7.09% from 10.94 million reported in Q3 2022. Similarly, metered customers stood at \n5.68 million in Q3 2023, indicating a growth of 3.77% from 5.47 million recorded in the pre-\nceding quarter. On a year -on-year basis, this grew by 13.07% from the figure reported in Q3 \n2022 which was 5.02 million.  \nIn addition, estimated customers during the quarter were 6.03 million, higher by 0.53% from \n6.00 million in Q2 2023. On a year -on-year basis, estimated customers increased by 2.02% in \nQ3 2023 from 5.91 million in Q3 2022. Revenue collected by the DISCOs during the period \nwas N260.16 billion from N263.08 billion in Q2 2023. On a year -on-year basis, revenue gen-\nerated in the reference period rose by 28.40% from N202.62 billion recorded in Q3 2022.  \nElectricity supply was 5,731.60 (Gwh) in Q3 2023 from 5,909.83 (Gwh) in the previous quar-\nter. However, on a year -on-year basis, electricity supply increased by 14.09% compared to \n5,023.96 (Gwh) reported in Q3 2022.\n\npage_label: Page 1\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\nReport Date: January 2024   \nNigeria Electricity Report :  \nEnergy Billed, Revenue Generated  \nAnd Customers By DISCOS  \n(Q3 2023)\n--------------------\n'}, {'role': 'user', 'content': "who's daisy?"}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6E0A44F0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AA65A33B40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6DFA6260>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 12:57:15 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'574'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'199'), (b'x-ratelimit-remaining-tokens', b'39575'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'637ms'), (b'x-request-id', b'req_8172b4cf90d8ebdbe9d8df853ed56924'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=vkVLDYJGG3TlID36slLgkwSBstTFqktLbuhGzzm8PTg-1708261035-1.0-Aana9yw61xkTlEkAJ563cJvF3c3LWj8yjUlOfSkmX/TUEL9vBepGLE2DYfQ6vthP80/nbWB0Am0fclE0IDAkJFc=; path=/; expires=Sun, 18-Feb-24 13:27:15 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=eSVCaYnxTDKN6zNNbNu17VV1T1RLvjvGaYBVg6EyRa4-1708261035471-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85766f48de63d7a9-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: who's daisy?
+INFO:root:AI response: I'm not sure who Daisy is. How can I assist you today?
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 13:57:14] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000001AA6E0BCEE0>, 'json_data': {'input': ['who is gatsby?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6E0D0220>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AA6DFDBDC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6E0D01F0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 12:57:34 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'22'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'198'), (b'x-ratelimit-remaining-tokens', b'149997'), (b'x-ratelimit-reset-requests', b'14m3.037s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_4c624cf80f06503231487ab1ef7a857b'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85766fc72ce9d7b1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 1e9e2c55-e308-4378-bc64-91227c0070ac] [Similarity score:             0.700355] 9 9 
+       @nbs_nigeria  
+ Nbs_nigeria  NBSNigeria  
+CONTACT  
+9
+> [Node 6cae622d-b6fd-45e3-8861-2f835462ae03] [Similarity score:             0.700297] 9
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria.\nContext information is below.\n--------------------\npage_label: Page 9\nfile_path: data\\AGO_DECEMBER_2023_REPORT.pdf\n\n9 9 \n       @nbs_nigeria  \n Nbs_nigeria  NBSNigeria  \nCONTACT  \n9\n\npage_label: Page 9\nfile_path: data\\LPG_DECEMBER_2023_REPORT.pdf\n\n9\n--------------------\n'}, {'role': 'user', 'content': "who's daisy?"}, {'role': 'assistant', 'content': "I'm not sure who Daisy is. How can I assist you today?"}, {'role': 'user', 'content': 'who is gatsby?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6DFA5150>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AA65A33B40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6DFA5210>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 12:57:36 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'1200'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'198'), (b'x-ratelimit-remaining-tokens', b'39867'), (b'x-ratelimit-reset-requests', b'14m2.978s'), (b'x-ratelimit-reset-tokens', b'199ms'), (b'x-request-id', b'req_03bdfb0799a6a9f72c2459d11543cd70'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85766fcc4abbd7a5-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: who is gatsby?
+INFO:root:AI response: Gatsby is a fictional character in F. Scott Fitzgerald's novel "The Great Gatsby." He is a wealthy and mysterious man known for throwing extravagant parties in the hopes of rekindling a past romance with Daisy Buchanan. The novel explores themes of wealth, love, and the American Dream.
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 13:57:35] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000001AA6E0A3520>, 'json_data': {'input': ["who's daisy?"], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6E0315A0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AA6DFDBDC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6E030F70>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 12:57:51 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'22'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'197'), (b'x-ratelimit-remaining-tokens', b'149997'), (b'x-ratelimit-reset-requests', b'20m58.37s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_dc9d003e6d5200eeb605e8a95f51a47f'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8576702f3a94d7a1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 22d26019-a536-470f-8040-d1a1e5167c62] [Similarity score:             0.692614] 4  
+KEY HIGHLIGHTS  
+Total customer numbers in Q3 2023 stood at 11.71 million from 11.47 million ...
+> [Node eb1f9d08-fb52-48c8-a4ee-7a3aac8c3153] [Similarity score:             0.688632] Report Date: January 2024   
+Nigeria Electricity Report :  
+Energy Billed, Revenue Generated  
+An...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria.\nContext information is below.\n--------------------\npage_label: Page 4\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\n4  \nKEY HIGHLIGHTS  \nTotal customer numbers in Q3 2023 stood at 11.71 million from 11.47 million in Q2 2023, \nshowing an increase of 2.08%. On a year -on-year basis, customer numbers in Q3 2023 rose \nby 7.09% from 10.94 million reported in Q3 2022. Similarly, metered customers stood at \n5.68 million in Q3 2023, indicating a growth of 3.77% from 5.47 million recorded in the pre-\nceding quarter. On a year -on-year basis, this grew by 13.07% from the figure reported in Q3 \n2022 which was 5.02 million.  \nIn addition, estimated customers during the quarter were 6.03 million, higher by 0.53% from \n6.00 million in Q2 2023. On a year -on-year basis, estimated customers increased by 2.02% in \nQ3 2023 from 5.91 million in Q3 2022. Revenue collected by the DISCOs during the period \nwas N260.16 billion from N263.08 billion in Q2 2023. On a year -on-year basis, revenue gen-\nerated in the reference period rose by 28.40% from N202.62 billion recorded in Q3 2022.  \nElectricity supply was 5,731.60 (Gwh) in Q3 2023 from 5,909.83 (Gwh) in the previous quar-\nter. However, on a year -on-year basis, electricity supply increased by 14.09% compared to \n5,023.96 (Gwh) reported in Q3 2022.\n\npage_label: Page 1\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\nReport Date: January 2024   \nNigeria Electricity Report :  \nEnergy Billed, Revenue Generated  \nAnd Customers By DISCOS  \n(Q3 2023)\n--------------------\n'}, {'role': 'user', 'content': "who's daisy?"}, {'role': 'assistant', 'content': "I'm not sure who Daisy is. How can I assist you today?"}, {'role': 'user', 'content': 'who is gatsby?'}, {'role': 'assistant', 'content': 'Gatsby is a fictional character in F. Scott Fitzgerald\'s novel "The Great Gatsby." He is a wealthy and mysterious man known for throwing extravagant parties in the hopes of rekindling a past romance with Daisy Buchanan. The novel explores themes of wealth, love, and the American Dream.'}, {'role': 'user', 'content': "who's daisy?"}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6E09C190>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001AA65A33B40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001AA6E0D3A00>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 12:57:53 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'981'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'197'), (b'x-ratelimit-remaining-tokens', b'39479'), (b'x-ratelimit-reset-requests', b'20m58.501s'), (b'x-ratelimit-reset-tokens', b'781ms'), (b'x-request-id', b'req_58ecf7b1457bdb0031f1a6e3d42f71b0'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857670334b2fd7a9-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: who's daisy?
+INFO:root:AI response: In the context of "The Great Gatsby," Daisy Buchanan is a fictional character and the love interest of Jay Gatsby. She is portrayed as a beautiful and charming socialite who is married to Tom Buchanan. Daisy represents the idea of wealth, status, and the allure of the American Dream in the novel.
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 13:57:52] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 13:59:58] "GET / HTTP/1.1" 200 -
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000002BD94394D30>, 'json_data': {'input': ['who is daisy?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD944015D0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94303AC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD944015A0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:00:07 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'17'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'196'), (b'x-ratelimit-remaining-tokens', b'149997'), (b'x-ratelimit-reset-requests', b'25m54.533s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_53d3ef229fa6e14dacbc3c6cf276c3b7'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=IPl2B56Nkwl99bNsvO2CwdOQurpabJLWtNNSnqAGqEk-1708261207-1.0-AXJ1RNxcUZfjhUS1kjuLdV5pr5wkHsM2nSDYwQZt3gWgTb8jROtAEJXy4fXn/7E0OkFObXLsjpWX2XQuJo0cJEc=; path=/; expires=Sun, 18-Feb-24 13:30:07 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=mi3QTbH2rtAJPY1wxqx_RKF_YCIUzPmxTx.6tj2g3fg-1708261207382-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857673804bfad799-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 22d26019-a536-470f-8040-d1a1e5167c62] [Similarity score:             0.684921] 4  
+KEY HIGHLIGHTS  
+Total customer numbers in Q3 2023 stood at 11.71 million from 11.47 million ...
+> [Node eb1f9d08-fb52-48c8-a4ee-7a3aac8c3153] [Similarity score:             0.680984] Report Date: January 2024   
+Nigeria Electricity Report :  
+Energy Billed, Revenue Generated  
+An...
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't\nContext information is below.\n--------------------\npage_label: Page 4\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\n4  \nKEY HIGHLIGHTS  \nTotal customer numbers in Q3 2023 stood at 11.71 million from 11.47 million in Q2 2023, \nshowing an increase of 2.08%. On a year -on-year basis, customer numbers in Q3 2023 rose \nby 7.09% from 10.94 million reported in Q3 2022. Similarly, metered customers stood at \n5.68 million in Q3 2023, indicating a growth of 3.77% from 5.47 million recorded in the pre-\nceding quarter. On a year -on-year basis, this grew by 13.07% from the figure reported in Q3 \n2022 which was 5.02 million.  \nIn addition, estimated customers during the quarter were 6.03 million, higher by 0.53% from \n6.00 million in Q2 2023. On a year -on-year basis, estimated customers increased by 2.02% in \nQ3 2023 from 5.91 million in Q3 2022. Revenue collected by the DISCOs during the period \nwas N260.16 billion from N263.08 billion in Q2 2023. On a year -on-year basis, revenue gen-\nerated in the reference period rose by 28.40% from N202.62 billion recorded in Q3 2022.  \nElectricity supply was 5,731.60 (Gwh) in Q3 2023 from 5,909.83 (Gwh) in the previous quar-\nter. However, on a year -on-year basis, electricity supply increased by 14.09% compared to \n5,023.96 (Gwh) reported in Q3 2022.\n\npage_label: Page 1\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\nReport Date: January 2024   \nNigeria Electricity Report :  \nEnergy Billed, Revenue Generated  \nAnd Customers By DISCOS  \n(Q3 2023)\n--------------------\n"}, {'role': 'user', 'content': 'who is daisy?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD94472980>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94398FC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD94472950>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:00:08 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'910'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'196'), (b'x-ratelimit-remaining-tokens', b'39559'), (b'x-ratelimit-reset-requests', b'25m54.716s'), (b'x-ratelimit-reset-tokens', b'661ms'), (b'x-request-id', b'req_eaca7315c0f7afc6b86712c6717cf14a'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=bSqNQlmU.fa5LrLaHxgu5Cv8j.0MD4_V2mOVnI6tyCM-1708261208-1.0-ARpuAeKaW4pAWFP86avAXm5HPSKpaXReiEyvSMt2tbjKppYLodraiJSVtwMDjbzsaLZCALav/SNYkLX5zdwVpfk=; path=/; expires=Sun, 18-Feb-24 13:30:08 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=jXpoCpN_3fYOG7.lTqJMCpPI155hfmFqeDaK_5tI00s-1708261208851-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85767383eee1d7a5-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: who is daisy?
+INFO:root:AI response: I don't have information about "Daisy" in the context provided. If you have any other questions related to the data on Nigeria's electricity report for Q3 2023, feel free to ask!
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:00:07] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000002BD94373130>, 'json_data': {'input': ["who's gatsby?"], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD9449C280>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94303AC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD9449C250>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:00:31 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'17'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'195'), (b'x-ratelimit-remaining-tokens', b'149997'), (b'x-ratelimit-reset-requests', b'32m42.665s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_86de018380a8cc3817bfb67edb70928b'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857674154bbfd7a5-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 6cae622d-b6fd-45e3-8861-2f835462ae03] [Similarity score:             0.701863] 9
+> [Node b1ef51f7-6a73-494e-b860-76a6fb79b4cc] [Similarity score:             0.70163] 5
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't\nContext information is below.\n--------------------\npage_label: Page 9\nfile_path: data\\LPG_DECEMBER_2023_REPORT.pdf\n\n9\n\npage_label: Page 5\nfile_path: data\\AGO_DECEMBER_2023_REPORT.pdf\n\n5\n--------------------\n"}, {'role': 'user', 'content': 'who is daisy?'}, {'role': 'assistant', 'content': 'I don\'t have information about "Daisy" in the context provided. If you have any other questions related to the data on Nigeria\'s electricity report for Q3 2023, feel free to ask!'}, {'role': 'user', 'content': "who's gatsby?"}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD9449F4C0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94398FC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD92403A90>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:00:33 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'910'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'195'), (b'x-ratelimit-remaining-tokens', b'39837'), (b'x-ratelimit-reset-requests', b'32m41.945s'), (b'x-ratelimit-reset-tokens', b'244ms'), (b'x-request-id', b'req_ff429aca5205d7c79e819fbfdfc00695'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8576741ebab8d7a5-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: who's gatsby?
+INFO:root:AI response: I don't have information about "Gatsby" in the context provided. If you have any questions related to the data on Nigeria's electricity report for Q3 2023, feel free to ask!
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:00:32] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000002BD943D1750>, 'json_data': {'input': ['only electricity report?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD94401BA0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94303AC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD94402020>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:00:54 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'18'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'194'), (b'x-ratelimit-remaining-tokens', b'149994'), (b'x-ratelimit-reset-requests', b'39m31.405s'), (b'x-ratelimit-reset-tokens', b'2ms'), (b'x-request-id', b'req_52b6689c10313567e5354e12f8aea84a'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857674a6edbad799-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node eb1f9d08-fb52-48c8-a4ee-7a3aac8c3153] [Similarity score:             0.83906] Report Date: January 2024   
+Nigeria Electricity Report :  
+Energy Billed, Revenue Generated  
+An...
+> [Node e75970df-877b-48e0-9264-ab5163c83873] [Similarity score:             0.818694] 3  
+Data is provided by the Nigerian Electricity Regulatory Commission (NERC) and verified 
+and v...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't\nContext information is below.\n--------------------\npage_label: Page 1\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\nReport Date: January 2024   \nNigeria Electricity Report :  \nEnergy Billed, Revenue Generated  \nAnd Customers By DISCOS  \n(Q3 2023)\n\npage_label: Page 3\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\n3  \nData is provided by the Nigerian Electricity Regulatory Commission (NERC) and verified \nand validated by the National Bureau of Statistics (NBS)  METHODOLOGY\n--------------------\n"}, {'role': 'user', 'content': 'who is daisy?'}, {'role': 'assistant', 'content': 'I don\'t have information about "Daisy" in the context provided. If you have any other questions related to the data on Nigeria\'s electricity report for Q3 2023, feel free to ask!'}, {'role': 'user', 'content': "who's gatsby?"}, {'role': 'assistant', 'content': 'I don\'t have information about "Gatsby" in the context provided. If you have any questions related to the data on Nigeria\'s electricity report for Q3 2023, feel free to ask!'}, {'role': 'user', 'content': 'only electricity report?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD944014E0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94398FC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD944024A0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:00:57 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'737'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'194'), (b'x-ratelimit-remaining-tokens', b'39714'), (b'x-ratelimit-reset-requests', b'39m30.296s'), (b'x-ratelimit-reset-tokens', b'429ms'), (b'x-request-id', b'req_dbd7edd3369cc050a21fd0a5e5c8eeb5'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857674b29d90d799-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: only electricity report?
+INFO:root:AI response: Yes, I have information related to the Nigeria Electricity Report for Q3 2023. If you have any questions or need data from that report, feel free to ask!
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:00:56] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000002BD943945E0>, 'json_data': {'input': ['i want to know more than the electricity situation in nigeria'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD9449F460>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94303AC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD9449F6A0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:01:30 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'16'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'193'), (b'x-ratelimit-remaining-tokens', b'149985'), (b'x-ratelimit-reset-requests', b'46m7.433s'), (b'x-ratelimit-reset-tokens', b'6ms'), (b'x-request-id', b'req_8b51e82c28dfff861838645a687a5f30'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857675879e04d7a9-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node eb1f9d08-fb52-48c8-a4ee-7a3aac8c3153] [Similarity score:             0.802847] Report Date: January 2024   
+Nigeria Electricity Report :  
+Energy Billed, Revenue Generated  
+An...
+> [Node e75970df-877b-48e0-9264-ab5163c83873] [Similarity score:             0.80102] 3  
+Data is provided by the Nigerian Electricity Regulatory Commission (NERC) and verified 
+and v...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't\nContext information is below.\n--------------------\npage_label: Page 1\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\nReport Date: January 2024   \nNigeria Electricity Report :  \nEnergy Billed, Revenue Generated  \nAnd Customers By DISCOS  \n(Q3 2023)\n\npage_label: Page 3\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\n3  \nData is provided by the Nigerian Electricity Regulatory Commission (NERC) and verified \nand validated by the National Bureau of Statistics (NBS)  METHODOLOGY\n--------------------\n"}, {'role': 'user', 'content': 'who is daisy?'}, {'role': 'assistant', 'content': 'I don\'t have information about "Daisy" in the context provided. If you have any other questions related to the data on Nigeria\'s electricity report for Q3 2023, feel free to ask!'}, {'role': 'user', 'content': "who's gatsby?"}, {'role': 'assistant', 'content': 'I don\'t have information about "Gatsby" in the context provided. If you have any questions related to the data on Nigeria\'s electricity report for Q3 2023, feel free to ask!'}, {'role': 'user', 'content': 'only electricity report?'}, {'role': 'assistant', 'content': 'Yes, I have information related to the Nigeria Electricity Report for Q3 2023. If you have any questions or need data from that report, feel free to ask!'}, {'role': 'user', 'content': 'i want to know more than the electricity situation in nigeria'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD94375D80>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94398FC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD94376140>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:01:32 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'934'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'193'), (b'x-ratelimit-remaining-tokens', b'39658'), (b'x-ratelimit-reset-requests', b'46m7.534s'), (b'x-ratelimit-reset-tokens', b'513ms'), (b'x-request-id', b'req_8c0f57b914ec1c912e40ab2485c447da'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8576758bab71d7b1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: i want to know more than the electricity situation in nigeria
+INFO:root:AI response: I don't have information beyond the Nigeria Electricity Report for Q3 2023. If you have any specific questions related to that report or anything else related to Nigeria's electricity data, feel free to ask!
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:01:31] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000002BD94372710>, 'json_data': {'input': ['what is the rate of inflation?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD94401510>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94303AC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD944B2560>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:01:56 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'26'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'192'), (b'x-ratelimit-remaining-tokens', b'149992'), (b'x-ratelimit-reset-requests', b'52m53.696s'), (b'x-ratelimit-reset-tokens', b'2ms'), (b'x-request-id', b'req_19eea83f1e27eee40a3cd063e86bf283'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857676286e6fd799-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node b5c0947c-c91e-4556-890f-a2913c55db10] [Similarity score:             0.841944] 13  
+ALL ITEMS LESS FARM PRODUCE AND ENERGY (CORE INFLATION)  
+The “All items less farm produces ...
+> [Node 0bfd1d43-ab1a-438b-944f-b3450a908ee4] [Similarity score:             0.841699] 15  
+ALL ITEMS LESS FARM PRODUCE AND ENERGY (CORE INFLATION)  
+The “All items less farm produces ...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't\nContext information is below.\n--------------------\npage_label: Page 13\nfile_path: data\\CPI_JANUARY_2024_REPORT.pdf\n\n13  \nALL ITEMS LESS FARM PRODUCE AND ENERGY (CORE INFLATION)  \nThe “All items less farm produces and energy” or Core inflation, which excludes the prices of \nvolatile agricultural produces and energy stood at 23.59% in January 2024 on a year -on-\nyear basis; up by 4.71% when compared to the 18.88% recorded in January 2023. The high-\nest increases were recorded in prices of Passenger Transport by Road, Medical Services, Ac-\ntual and Imputed Rentals for Housing, Pharmaceutical products, Accommodation service, \nand Passenger Transport by Air etc.  \nOn a month -on-month basis, the Core Inflation rate was 2.24% in January 2024. It stood at \n1.82% in December 2023, up by 0.42%. The average twelve -month annual inflation rate was \n21.15% for the twelve months ending January 2024; this was 4.74% points higher than the \n16.41% recorded in January 2023.\n\npage_label: Page 15\nfile_path: data\\CPI_DECEMBER_2023_REPORT.pdf\n\n15  \nALL ITEMS LESS FARM PRODUCE AND ENERGY (CORE INFLATION)  \nThe “All items less farm produces and energy” or Core inflation, which excludes the prices of \nvolatile agricultural produces and energy stood at 23.06% in December 2023 on a year -on-\nyear basis; up by 4.85% when compared to the 18.21% recorded in December 2022. The \nhighest increases were recorded in prices of Passenger Transport by Road, Medical Services, \nActual and Imputed Rentals for Housing, Passenger Transport by Air, Pharmaceutical prod-\nucts, Accommodation services, etc.  \nOn a month -on-month basis, the Core Inflation rate was 1.82% in December 2023. It stood \nat 1.53% in November 2023, up by 0.29%. The average twelve -month annual inflation rate \nwas 20.76% for the twelve months ending December 2023; this was 4.74% points higher \nthan the 16.02% recorded in December 2022.\n--------------------\n"}, {'role': 'user', 'content': 'who is daisy?'}, {'role': 'assistant', 'content': 'I don\'t have information about "Daisy" in the context provided. If you have any other questions related to the data on Nigeria\'s electricity report for Q3 2023, feel free to ask!'}, {'role': 'user', 'content': "who's gatsby?"}, {'role': 'assistant', 'content': 'I don\'t have information about "Gatsby" in the context provided. If you have any questions related to the data on Nigeria\'s electricity report for Q3 2023, feel free to ask!'}, {'role': 'user', 'content': 'only electricity report?'}, {'role': 'assistant', 'content': 'Yes, I have information related to the Nigeria Electricity Report for Q3 2023. If you have any questions or need data from that report, feel free to ask!'}, {'role': 'user', 'content': 'i want to know more than the electricity situation in nigeria'}, {'role': 'assistant', 'content': "I don't have information beyond the Nigeria Electricity Report for Q3 2023. If you have any specific questions related to that report or anything else related to Nigeria's electricity data, feel free to ask!"}, {'role': 'user', 'content': 'what is the rate of inflation?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD943CE380>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94398FC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD943CE530>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:01:58 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'1699'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'192'), (b'x-ratelimit-remaining-tokens', b'39239'), (b'x-ratelimit-reset-requests', b'52m53.8s'), (b'x-ratelimit-reset-tokens', b'1.141s'), (b'x-request-id', b'req_a9719b955c647ce7648c0cff93fd5acc'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8576762cae03d7a9-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: what is the rate of inflation?
+INFO:root:AI response: In the data provided, the rate of inflation mentioned is specifically related to Core Inflation in Nigeria. In January 2024, the Core Inflation rate, which excludes volatile items like farm produce and energy, was 23.59% on a year-on-year basis. This was an increase of 4.71% compared to January 2023. The month-on-month Core Inflation rate for January 2024 was 2.24%.
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:01:57] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000002BD94396290>, 'json_data': {'input': ['but you said you only have electricity data'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD943761A0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94303AC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD9449C100>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:03:23 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'21'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'191'), (b'x-ratelimit-remaining-tokens', b'149990'), (b'x-ratelimit-reset-requests', b'58m38.176s'), (b'x-ratelimit-reset-tokens', b'4ms'), (b'x-request-id', b'req_c7026086330561f6b050a5f4606683db'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8576784b69f9d7b1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node e75970df-877b-48e0-9264-ab5163c83873] [Similarity score:             0.804817] 3  
+Data is provided by the Nigerian Electricity Regulatory Commission (NERC) and verified 
+and v...
+> [Node eb1f9d08-fb52-48c8-a4ee-7a3aac8c3153] [Similarity score:             0.792624] Report Date: January 2024   
+Nigeria Electricity Report :  
+Energy Billed, Revenue Generated  
+An...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't\nContext information is below.\n--------------------\npage_label: Page 3\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\n3  \nData is provided by the Nigerian Electricity Regulatory Commission (NERC) and verified \nand validated by the National Bureau of Statistics (NBS)  METHODOLOGY\n\npage_label: Page 1\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\nReport Date: January 2024   \nNigeria Electricity Report :  \nEnergy Billed, Revenue Generated  \nAnd Customers By DISCOS  \n(Q3 2023)\n--------------------\n"}, {'role': 'user', 'content': 'who is daisy?'}, {'role': 'assistant', 'content': 'I don\'t have information about "Daisy" in the context provided. If you have any other questions related to the data on Nigeria\'s electricity report for Q3 2023, feel free to ask!'}, {'role': 'user', 'content': "who's gatsby?"}, {'role': 'assistant', 'content': 'I don\'t have information about "Gatsby" in the context provided. If you have any questions related to the data on Nigeria\'s electricity report for Q3 2023, feel free to ask!'}, {'role': 'user', 'content': 'only electricity report?'}, {'role': 'assistant', 'content': 'Yes, I have information related to the Nigeria Electricity Report for Q3 2023. If you have any questions or need data from that report, feel free to ask!'}, {'role': 'user', 'content': 'i want to know more than the electricity situation in nigeria'}, {'role': 'assistant', 'content': "I don't have information beyond the Nigeria Electricity Report for Q3 2023. If you have any specific questions related to that report or anything else related to Nigeria's electricity data, feel free to ask!"}, {'role': 'user', 'content': 'what is the rate of inflation?'}, {'role': 'assistant', 'content': 'In the data provided, the rate of inflation mentioned is specifically related to Core Inflation in Nigeria. In January 2024, the Core Inflation rate, which excludes volatile items like farm produce and energy, was 23.59% on a year-on-year basis. This was an increase of 4.71% compared to January 2023. The month-on-month Core Inflation rate for January 2024 was 2.24%.'}, {'role': 'user', 'content': 'but you said you only have electricity data'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD944B94E0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BD94398FC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BD94471B10>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:03:25 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'1080'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'191'), (b'x-ratelimit-remaining-tokens', b'39492'), (b'x-ratelimit-reset-requests', b'58m38.18s'), (b'x-ratelimit-reset-tokens', b'762ms'), (b'x-request-id', b'req_3dad69e4027079dadd640a91ab815e86'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857678504d81d799-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: but you said you only have electricity data
+INFO:root:AI response: I apologize for the oversight. The information I provided about the Core Inflation rate in Nigeria was not from the electricity report for Q3 2023. If you have any specific questions related to the electricity data or need more information from that report, feel free to ask!
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:03:24] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:05:57] "GET / HTTP/1.1" 200 -
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000001CBD1F031C0>, 'json_data': {'input': ['who is lionel messi'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD1F51570>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001CBD1E57DC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD1F51540>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:06:07 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'32'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'191'), (b'x-ratelimit-remaining-tokens', b'149995'), (b'x-ratelimit-reset-requests', b'1h3m5.951s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_41553d224e3b59fa0c0f78bd943f3e69'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=.0YRf910FZH_ynQce.yPrbXB.iAOc6.ORtKe_9VxpeI-1708261567-1.0-AY0fH4ujSEWYajNyAp/wSxK36B57MQ0TDdXwTA7s5WWZ9gguQ8ZQlL4q7vik7pvE5N8Xeq74+djxDETDatGQof0=; path=/; expires=Sun, 18-Feb-24 13:36:07 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=_Y2sbBfxHngxCDi38EGMlvtXg072gLnAkxzhLUKiXnU-1708261567951-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85767c4b1ca5d7b1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 40da7670-fbaf-4f4b-aa5a-f1ece3a5631a] [Similarity score:             0.65447] Premium Motor Spirit  
+(Petrol) Price Watch  
+(DECEMBER 2023)  
+Report Date: January 2024
+> [Node 5e00cf41-36e9-4f2e-9032-5012714fab87] [Similarity score:             0.648724] DECEMBER 2023)  Liquefied Petroleum Gas  
+(Cooking Gas) Price Watch  
+Report Date: January 2024
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't knowyou are trained on different data from the niegria\nContext information is below.\n--------------------\npage_label: Page 1\nfile_path: data\\PMS_DECEMBER_2023_REPORT.pdf\n\nPremium Motor Spirit  \n(Petrol) Price Watch  \n(DECEMBER 2023)  \nReport Date: January 2024\n\npage_label: Page 1\nfile_path: data\\LPG_DECEMBER_2023_REPORT.pdf\n\nDECEMBER 2023)  Liquefied Petroleum Gas  \n(Cooking Gas) Price Watch  \nReport Date: January 2024\n--------------------\n"}, {'role': 'user', 'content': 'who is lionel messi'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD1FC28F0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001CBC9953B40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD1FC28C0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:06:09 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'1010'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'191'), (b'x-ratelimit-remaining-tokens', b'39826'), (b'x-ratelimit-reset-requests', b'1h3m5.883s'), (b'x-ratelimit-reset-tokens', b'261ms'), (b'x-request-id', b'req_8eb23fbb06496e21ce711668bcc87941'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=HN6GlF2bPGE0ofi_8TyeEx8hrJIa2EKwixca2iWmLRo-1708261569-1.0-AbzGXb8AXzF2mz6y1XbPh5y+Yu5bHEaIRR7KAB+rfuWyoJH4Fq3Wmtp55+051Hg/W36JPvHHBq3pD1jdObhL6RY=; path=/; expires=Sun, 18-Feb-24 13:36:09 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=wQ_GtDcOcf.6WLa5qUmFNYoaDTuAr.ZupSi9OBvDNj4-1708261569788-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85767c53192dd7a9-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: who is lionel messi
+INFO:root:AI response: Lionel Messi is a professional football (soccer) player from Argentina, widely regarded as one of the greatest players of all time. He has won numerous awards and accolades throughout his career, including multiple FIFA Ballon d'Or awards.
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:06:08] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000001CBD1FBCD30>, 'json_data': {'input': ['who is daisy?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD1FEC070>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001CBD1E57DC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD1FC3FA0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:06:25 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'23'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'190'), (b'x-ratelimit-remaining-tokens', b'149997'), (b'x-ratelimit-reset-requests', b'1h10m0.397s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_61415e9dac34f4dd242819c3232c689e'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85767cbb9ec7d7a1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 22d26019-a536-470f-8040-d1a1e5167c62] [Similarity score:             0.684938] 4  
+KEY HIGHLIGHTS  
+Total customer numbers in Q3 2023 stood at 11.71 million from 11.47 million ...
+> [Node eb1f9d08-fb52-48c8-a4ee-7a3aac8c3153] [Similarity score:             0.681011] Report Date: January 2024   
+Nigeria Electricity Report :  
+Energy Billed, Revenue Generated  
+An...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't knowyou are trained on different data from the niegria\nContext information is below.\n--------------------\npage_label: Page 4\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\n4  \nKEY HIGHLIGHTS  \nTotal customer numbers in Q3 2023 stood at 11.71 million from 11.47 million in Q2 2023, \nshowing an increase of 2.08%. On a year -on-year basis, customer numbers in Q3 2023 rose \nby 7.09% from 10.94 million reported in Q3 2022. Similarly, metered customers stood at \n5.68 million in Q3 2023, indicating a growth of 3.77% from 5.47 million recorded in the pre-\nceding quarter. On a year -on-year basis, this grew by 13.07% from the figure reported in Q3 \n2022 which was 5.02 million.  \nIn addition, estimated customers during the quarter were 6.03 million, higher by 0.53% from \n6.00 million in Q2 2023. On a year -on-year basis, estimated customers increased by 2.02% in \nQ3 2023 from 5.91 million in Q3 2022. Revenue collected by the DISCOs during the period \nwas N260.16 billion from N263.08 billion in Q2 2023. On a year -on-year basis, revenue gen-\nerated in the reference period rose by 28.40% from N202.62 billion recorded in Q3 2022.  \nElectricity supply was 5,731.60 (Gwh) in Q3 2023 from 5,909.83 (Gwh) in the previous quar-\nter. However, on a year -on-year basis, electricity supply increased by 14.09% compared to \n5,023.96 (Gwh) reported in Q3 2022.\n\npage_label: Page 1\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\nReport Date: January 2024   \nNigeria Electricity Report :  \nEnergy Billed, Revenue Generated  \nAnd Customers By DISCOS  \n(Q3 2023)\n--------------------\n"}, {'role': 'user', 'content': 'who is lionel messi'}, {'role': 'assistant', 'content': "Lionel Messi is a professional football (soccer) player from Argentina, widely regarded as one of the greatest players of all time. He has won numerous awards and accolades throughout his career, including multiple FIFA Ballon d'Or awards."}, {'role': 'user', 'content': 'who is daisy?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD1FEF2B0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001CBC9953B40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD1FEEFB0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:06:27 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'822'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'190'), (b'x-ratelimit-remaining-tokens', b'39479'), (b'x-ratelimit-reset-requests', b'1h10m0.483s'), (b'x-ratelimit-reset-tokens', b'781ms'), (b'x-request-id', b'req_66a78a1a35b84be1f0b8d4926cdfa308'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85767cbfe932d799-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: who is daisy?
+INFO:root:AI response: I'm not sure who you are referring to when you mention "Daisy." If you can provide more context or details, I might be able to assist you better.
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:06:26] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000001CBD1FF4C10>, 'json_data': {'input': ['who are you?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD1F51FF0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001CBD1E57DC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD1F51960>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:07:00 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'18'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'189'), (b'x-ratelimit-remaining-tokens', b'149997'), (b'x-ratelimit-reset-requests', b'1h16m37.823s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_af32184dec026ba590e617b6e0230230'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85767d93c8aad7b1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 31880252-d681-4d27-8fff-21873cd9d926] [Similarity score:             0.724476] 7
+> [Node c508e8bc-6cc9-4944-9912-ed1c1f73000a] [Similarity score:             0.723142] 7
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't knowyou are trained on different data from the niegria\nContext information is below.\n--------------------\npage_label: Page 7\nfile_path: data\\Telecoms_Data_Q2_2023.pdf\n\n7\n\npage_label: Page 7\nfile_path: data\\ELECTRICIY_DATA_Q3_2023.pdf\n\n7\n--------------------\n"}, {'role': 'user', 'content': 'who is lionel messi'}, {'role': 'assistant', 'content': "Lionel Messi is a professional football (soccer) player from Argentina, widely regarded as one of the greatest players of all time. He has won numerous awards and accolades throughout his career, including multiple FIFA Ballon d'Or awards."}, {'role': 'user', 'content': 'who is daisy?'}, {'role': 'assistant', 'content': 'I\'m not sure who you are referring to when you mention "Daisy." If you can provide more context or details, I might be able to assist you better.'}, {'role': 'user', 'content': 'who are you?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD2002830>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001CBC9953B40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001CBD2002530>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 13:07:01 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'660'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'189'), (b'x-ratelimit-remaining-tokens', b'39766'), (b'x-ratelimit-reset-requests', b'1h16m37.691s'), (b'x-ratelimit-reset-tokens', b'351ms'), (b'x-request-id', b'req_a7df6fedb4d6b22c45e2c6062a15f11a'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'85767d995c65d7a9-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: who are you?
+INFO:root:AI response: I am a chatbot trained to have normal conversations and provide information on various topics, including data related to Nigeria. How can I assist you today?
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:07:00] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 14:08:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\Lib\\site-packages\\flask\\config.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 15:24:43] "GET / HTTP/1.1" 200 -
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x000001C3DDE95000>, 'json_data': {'input': ["who's gatsby?"], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C3DDF05600>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C3DDE03DC0> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C3DDF055D0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 14:25:01 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'15'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'199'), (b'x-ratelimit-remaining-tokens', b'149997'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_b157cbe50bca20f2b782a118047a6892'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=87gONNjTBqJVvlKZQvpX_yVvOjB7SQSBpwSxnsivFfM-1708266301-1.0-ARrNpzcaaqOjJCuOBZakRTTC8jJSdzx4P85BtootfT6Viz5bODPf7lup1T/0ME+cua7DK/kOhDIptzaWdGEPlaY=; path=/; expires=Sun, 18-Feb-24 14:55:01 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=4nmruQHZQBF8F1HLeZ6.hCo3UydhbHKgWLNzWJRnhJc-1708266301485-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8576efdf188b637d-LHR'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 6cae622d-b6fd-45e3-8861-2f835462ae03] [Similarity score:             0.701863] 9
+> [Node b1ef51f7-6a73-494e-b860-76a6fb79b4cc] [Similarity score:             0.70163] 5
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't knowyou were trained on different data from the NBS\nContext information is below.\n--------------------\npage_label: Page 9\nfile_path: data\\LPG_DECEMBER_2023_REPORT.pdf\n\n9\n\npage_label: Page 5\nfile_path: data\\AGO_DECEMBER_2023_REPORT.pdf\n\n5\n--------------------\n"}, {'role': 'user', 'content': "who's gatsby?"}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C3DDF76950>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C3DDE98140> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C3DDF76920>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Sun, 18 Feb 2024 14:25:03 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'1018'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'199'), (b'x-ratelimit-remaining-tokens', b'39873'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'190ms'), (b'x-request-id', b'req_74ae51e2b98f7e1689854e532cef2747'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=UE9Zf3u39_wF9WYpeG5ZxhX7Ej.LwASs8ekJyxhthUI-1708266303-1.0-AcjYNeVKZgRfZ1RLX5KkA1pRqFWS18BI4FjMHxk+0GZjmPtS25DIH0qhtNvlMeq8uEbwpfUMQNqG0ueEnm3Ye4s=; path=/; expires=Sun, 18-Feb-24 14:55:03 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=hNvJS1k7tP1bGV3.twemWSy4e4huy20r6K0m6AIsx90-1708266303412-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8576efe3594f63d6-LHR'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: who's gatsby?
+INFO:root:AI response: I'm not sure who Gatsby is, as my training data is focused on information related to Nigeria. If you have any questions about Nigeria or data related to Nigeria, feel free to ask!
+INFO:werkzeug:127.0.0.1 - - [18/Feb/2024 15:25:02] "POST /chat HTTP/1.1" 200 -
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.217:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:06:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:07:19] "GET / HTTP/1.1" 200 -
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x0000011B84796B90>, 'json_data': {'input': ['hi'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B84805660>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84703F40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B84805630>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:07:29 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'24'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-remaining-requests', b'199'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-request-id', b'req_73217cc2f4729686e236af79af16883c'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=6MWeAc7UTPYqo1UHy.pcbzLPcQJqgZ7sttJB.xlS_pc-1708348049-1.0-Ac+h9pvP/LW8tpBjxMc08YPVQLsBsmX0aOmoey1P+O62CuglZF36ztgQA3iJPA9h3Xu0E1DjB2+7rUE1D/Pnw1I=; path=/; expires=Mon, 19-Feb-24 13:37:29 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=dMtsuVaqlCXeDDPckg5bvyA1FfUgD8V.reO4oLtoyZk-1708348049123-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ebba91884d7a1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 588d475f-fb49-4823-b387-81aced63fef7] [Similarity score:             0.750063] 17
+> [Node 63232422-e225-4b00-86bc-d71c1511cc1e] [Similarity score:             0.748025] 15
+DEBUG:httpx:load_ssl_context verify=True cert=None trust_env=True http2=False
+DEBUG:httpx:load_verify_locations cafile='C:\\Users\\emmau\\Downloads\\chatbot\\chatbot\\lib\\site-packages\\certifi\\cacert.pem'
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't knowyou were trained on different data from the NBS\nContext information is below.\n--------------------\npage_label: Page 17\nfile_path: data\\CPI_DECEMBER_2023_REPORT.pdf\n\n17\n\npage_label: Page 15\nfile_path: data\\TRANSPORT_FARE_WATCH_DECEMBER_2023.pdf\n\n15\n--------------------\n"}, {'role': 'user', 'content': 'hi'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B8487D3F0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84798840> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B8487D3C0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:07:30 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'609'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'199'), (b'x-ratelimit-remaining-tokens', b'39873'), (b'x-ratelimit-reset-requests', b'7m12s'), (b'x-ratelimit-reset-tokens', b'190ms'), (b'x-request-id', b'req_b648a06faa3fda0bfb9017b4097015cb'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=39NhiNUdNR6jLIO1pDSqlKilGarR1VxPvE.k5fkYlHs-1708348050-1.0-AQAQf7SLefLS7LoOjBgbFMIbERixz+No01UGQ8KaOHuV9ncFnTX9flppu/BTh1AGjd+Gtk/c43YLfaLekftqhb8=; path=/; expires=Mon, 19-Feb-24 13:37:30 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Set-Cookie', b'_cfuvid=4CW9u5GHEuPWJm2rKQ0jFf3SSkSmB_I.CBhIZpJSb_U-1708348050674-0.0-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ebbad8993d799-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: hi
+INFO:root:AI response: Hello! How can I assist you today?
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:07:30] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:09:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:09:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:10:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:11:19] "GET / HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x0000011B8481A440>, 'json_data': {'input': ['hi'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B8487FA60>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84703F40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B8487FA30>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:12:23 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'20'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-remaining-requests', b'198'), (b'x-ratelimit-reset-requests', b'9m29.442s'), (b'x-request-id', b'req_1921f00f6d24047a47754c18b2d387a8'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ec2da2983d7a5-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 588d475f-fb49-4823-b387-81aced63fef7] [Similarity score:             0.750063] 17
+> [Node 63232422-e225-4b00-86bc-d71c1511cc1e] [Similarity score:             0.748025] 15
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't knowyou were trained on different data from the NBS\nContext information is below.\n--------------------\npage_label: Page 17\nfile_path: data\\CPI_DECEMBER_2023_REPORT.pdf\n\n17\n\npage_label: Page 15\nfile_path: data\\TRANSPORT_FARE_WATCH_DECEMBER_2023.pdf\n\n15\n--------------------\n"}, {'role': 'user', 'content': 'hi'}, {'role': 'assistant', 'content': 'Hello! How can I assist you today?'}, {'role': 'user', 'content': 'hi'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B848A74C0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84798840> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B848A7700>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:12:24 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'235'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'198'), (b'x-ratelimit-remaining-tokens', b'39862'), (b'x-ratelimit-reset-requests', b'9m29.454s'), (b'x-ratelimit-reset-tokens', b'207ms'), (b'x-request-id', b'req_48bd9c86d2a67ab55f0aadeefce94ae0'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ec2de0ddfd799-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: hi
+INFO:root:AI response: Hello again! How can I help you today?
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:12:24] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x0000011B84819E10>, 'json_data': {'input': ['how much did nigerians spend on data?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B84804610>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84703F40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B84805750>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:17:41 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'18'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'198'), (b'x-ratelimit-remaining-tokens', b'149990'), (b'x-ratelimit-reset-requests', b'11m23.195s'), (b'x-ratelimit-reset-tokens', b'3ms'), (b'x-request-id', b'req_f51bbaaf995598ca62089dc9c3d12a19'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857eca9ecfb8d7b1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 3c3580bb-376a-4a2b-a6a2-50bae4a6002d] [Similarity score:             0.817652] 3 METHODOLOGY  
+The data collection was conducted in sample outlets spread across 774 local gover...
+> [Node a1d12dc0-2ebf-409e-bab6-3c5169b4b3c3] [Similarity score:             0.813324] 3 METHODOLOGY  
+The data collection was conducted in sample outlets spread across 774 local gover...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't knowyou were trained on different data from the NBS\nContext information is below.\n--------------------\npage_label: Page 3\nfile_path: data\\AGO_DECEMBER_2023_REPORT.pdf\n\n3 METHODOLOGY  \nThe data collection was conducted in sample outlets spread across 774 local govern-\nment areas in all the 36 states and the FCT, Abuja. The data was collected from over \n10,000 respondents located in the outlets. The estimates were derived from the \nweights generated from household expenditure on fuel and the actual prices house-\nholds bought those fuels. This data collection exercise was done by over 700 NBS staff \nin all the states and the FCT and were closely monitored by quality control officers with \nsophisticated monitoring guidelines.  \nThe average prices are reported for each state and the FCT, Abuja accordingly.\n\npage_label: Page 3\nfile_path: data\\PMS_DECEMBER_2023_REPORT.pdf\n\n3 METHODOLOGY  \nThe data collection was conducted in sample outlets spread across 774 local government \nareas in all the 36 states and the FCT, Abuja. The data was collected from over 10,000 re-\nspondents located in the outlets. The estimates were derived from the weights generated \nfrom household expenditure on fuel and the actual prices households bought those fuels. \nThis data collection exercise was done by over 700 NBS staff in all the states and the FCT \nand were closely monitored by quality control officers with sophisticated monitoring guide-\nlines.  \nThe average prices are reported for each state and the FCT, Abuja accordingly.\n--------------------\n"}, {'role': 'user', 'content': 'hi'}, {'role': 'assistant', 'content': 'Hello! How can I assist you today?'}, {'role': 'user', 'content': 'hi'}, {'role': 'assistant', 'content': 'Hello again! How can I help you today?'}, {'role': 'user', 'content': 'how much did nigerians spend on data?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B84894100>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84798840> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B848A7DC0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:17:43 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'1025'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'198'), (b'x-ratelimit-remaining-tokens', b'39523'), (b'x-ratelimit-reset-requests', b'11m23.07s'), (b'x-ratelimit-reset-tokens', b'715ms'), (b'x-request-id', b'req_d2f2da15af93f714556c270cb8eb8906'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ecaa3b839d7a1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: how much did nigerians spend on data?
+INFO:root:AI response: I don't have specific data on how much Nigerians spent on data. The information I have pertains to fuel prices in Nigeria. If you have any questions related to that, feel free to ask!
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:17:43] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x0000011B8481A7A0>, 'json_data': {'input': ['how much was spent on data '], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B84895C90>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84703F40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B84895C60>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:18:04 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'24'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'197'), (b'x-ratelimit-remaining-tokens', b'149994'), (b'x-ratelimit-reset-requests', b'18m12.712s'), (b'x-ratelimit-reset-tokens', b'2ms'), (b'x-request-id', b'req_bb1ad18199c850bfd4ceadc5afb0661b'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ecb2bb988d7a1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node 3c3580bb-376a-4a2b-a6a2-50bae4a6002d] [Similarity score:             0.815857] 3 METHODOLOGY  
+The data collection was conducted in sample outlets spread across 774 local gover...
+> [Node a1d12dc0-2ebf-409e-bab6-3c5169b4b3c3] [Similarity score:             0.814138] 3 METHODOLOGY  
+The data collection was conducted in sample outlets spread across 774 local gover...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't knowyou were trained on different data from the NBS\nContext information is below.\n--------------------\npage_label: Page 3\nfile_path: data\\AGO_DECEMBER_2023_REPORT.pdf\n\n3 METHODOLOGY  \nThe data collection was conducted in sample outlets spread across 774 local govern-\nment areas in all the 36 states and the FCT, Abuja. The data was collected from over \n10,000 respondents located in the outlets. The estimates were derived from the \nweights generated from household expenditure on fuel and the actual prices house-\nholds bought those fuels. This data collection exercise was done by over 700 NBS staff \nin all the states and the FCT and were closely monitored by quality control officers with \nsophisticated monitoring guidelines.  \nThe average prices are reported for each state and the FCT, Abuja accordingly.\n\npage_label: Page 3\nfile_path: data\\PMS_DECEMBER_2023_REPORT.pdf\n\n3 METHODOLOGY  \nThe data collection was conducted in sample outlets spread across 774 local government \nareas in all the 36 states and the FCT, Abuja. The data was collected from over 10,000 re-\nspondents located in the outlets. The estimates were derived from the weights generated \nfrom household expenditure on fuel and the actual prices households bought those fuels. \nThis data collection exercise was done by over 700 NBS staff in all the states and the FCT \nand were closely monitored by quality control officers with sophisticated monitoring guide-\nlines.  \nThe average prices are reported for each state and the FCT, Abuja accordingly.\n--------------------\n"}, {'role': 'user', 'content': 'hi'}, {'role': 'assistant', 'content': 'Hello! How can I assist you today?'}, {'role': 'user', 'content': 'hi'}, {'role': 'assistant', 'content': 'Hello again! How can I help you today?'}, {'role': 'user', 'content': 'how much did nigerians spend on data?'}, {'role': 'assistant', 'content': "I don't have specific data on how much Nigerians spent on data. The information I have pertains to fuel prices in Nigeria. If you have any questions related to that, feel free to ask!"}, {'role': 'user', 'content': 'how much was spent on data '}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B848B69B0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84798840> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B848B66B0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:18:06 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'1281'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'197'), (b'x-ratelimit-remaining-tokens', b'39468'), (b'x-ratelimit-reset-requests', b'18m12.868s'), (b'x-ratelimit-reset-tokens', b'798ms'), (b'x-request-id', b'req_174594e73b1f5ef7e142b1baa199d783'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ecb2f0ea2d7a1-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: how much was spent on data 
+INFO:root:AI response: I'm sorry, but I don't have access to data on how much Nigerians spent on data. My training is focused on information related to fuel prices in Nigeria. If you have any questions about that, feel free to ask!
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:18:06] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x0000011B8488CDC0>, 'json_data': {'input': ['how many nigerians own a sim? '], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B8487E260>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84703F40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B847754B0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:19:24 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'18'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'196'), (b'x-ratelimit-remaining-tokens', b'149992'), (b'x-ratelimit-reset-requests', b'24m4.786s'), (b'x-ratelimit-reset-tokens', b'2ms'), (b'x-request-id', b'req_4e32e28309da6b47194db195f5c90227'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ecd1eee92d7a5-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node a248a573-e752-4fa1-aa8c-539fdf8406f0] [Similarity score:             0.794832] 4 KEY HIGHLIGHTS  
+\uf0a8 The total number of active voice subscribers in Q3 2023 was 221,769,883 from...
+> [Node 5197fc19-cee3-4621-b852-3c01433a11f6] [Similarity score:             0.793185] 4 KEY HIGHLIGHTS  
+\uf0a8 The total number of active voice subscribers in Q2 2023 was 220,086,951 from...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't knowyou were trained on different data from the NBS\nContext information is below.\n--------------------\npage_label: Page 4\nfile_path: data\\Telecoms_Data_Q3_2023.pdf\n\n4 KEY HIGHLIGHTS  \n\uf0a8 The total number of active voice subscribers in Q3 2023 was 221,769,883 from the 212,201,578 reported \nin Q3 2022, indicating a growth rate of 4.51%. On a quarter -on-quarter basis, this rose by 0.76%.  \n\uf0a8 Also, in Q3 2023, the total number of active internet subscribers stood at 160,171,125 from 152,784,980 \nreported in Q3 2022, showing an increase of 4.83%. On a quarter -on-quarter basis, this grew by 0.42%.  \n\uf0a8 On state profile analysis, Lagos state had the highest number of active voice subscribers in Q3 2023 with \n27,043,333, followed by Ogun with 13,136,247 and Kano with 12,192,122. On the other hand, Bayelsa \nrecorded the least with 1,558,509, followed by Gombe and Yobe with 2,643,899 and 2,760,261 respec-\ntively.  \n\uf0a8 In addition, Lagos state had the highest number of active internet subscribers in Q3 2023 with \n19,188,745, followed by Ogun with 9,538,622 and Kano with 8,712,782. On the other hand, Bayelsa rec-\norded the least with 1,195,580, followed by Zamfara and Gombe with 1,863,686 and 1,909,498 respec-\ntively. However, MTN had the highest share of subscriptions in Q3 2023.\n\npage_label: Page 4\nfile_path: data\\Telecoms_Data_Q2_2023.pdf\n\n4 KEY HIGHLIGHTS  \n\uf0a8 The total number of active voice subscribers in Q2 2023 was 220,086,951 from the 206,449,125 reported \nin Q2 2022, indicating a growth rate of 6.61%. On a quarter -on-quarter basis, this declined by 2.69%.  \n\uf0a8 Also, in Q2 2023, the total number of active internet subscribers stood at 159,498,826 from 151,332,090 \nreported in Q2 2022, showing an increase of 5.40%. On a quarter -on-quarter basis, this grew by 1.24%.  \n\uf0a8 On state profile analysis, Lagos state had the highest number of active voice subscribers in Q2 2023 with \n26,423,757, followed by Ogun with 12,976,190 and Kano with 12,129,536. On the other hand, Bayelsa \nrecorded the least with 1,601,675, followed by Ebonyi and Ekiti with 1,911,606 and 1,992,640 respective-\nly.  \n\uf0a8 In addition, Lagos state had the highest number of active internet subscribers in Q2 2023 with \n18,868,376, followed by Ogun with 9,471,170 and Kano with 8,768,199. On the other hand, Bayelsa rec-\norded the least with 1,156,994, followed by Ebonyi and Ekiti with 1,335,968 and 1,512,952 respectively. \nHowever, MTN had the highest share of subscriptions in Q2 2023.\n--------------------\n"}, {'role': 'user', 'content': 'hi'}, {'role': 'assistant', 'content': 'Hello! How can I assist you today?'}, {'role': 'user', 'content': 'hi'}, {'role': 'assistant', 'content': 'Hello again! How can I help you today?'}, {'role': 'user', 'content': 'how much did nigerians spend on data?'}, {'role': 'assistant', 'content': "I don't have specific data on how much Nigerians spent on data. The information I have pertains to fuel prices in Nigeria. If you have any questions related to that, feel free to ask!"}, {'role': 'user', 'content': 'how much was spent on data '}, {'role': 'assistant', 'content': "I'm sorry, but I don't have access to data on how much Nigerians spent on data. My training is focused on information related to fuel prices in Nigeria. If you have any questions about that, feel free to ask!"}, {'role': 'user', 'content': 'how many nigerians own a sim? '}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B84888D60>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84798840> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B84888A60>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:19:26 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'1427'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'196'), (b'x-ratelimit-remaining-tokens', b'39164'), (b'x-ratelimit-reset-requests', b'24m4.958s'), (b'x-ratelimit-reset-tokens', b'1.254s'), (b'x-request-id', b'req_23cd2aa88bfb070d8f4d44e7f98ef2e8'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ecd227d65d7a9-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: how many nigerians own a sim? 
+INFO:root:AI response: In Q3 2023, the total number of active voice subscribers in Nigeria was 221,769,883. This indicates the number of Nigerians who own a SIM card for voice services during that period.
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:19:26] "POST /chat HTTP/1.1" 200 -
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/embeddings', 'files': None, 'post_parser': <function Embeddings.create.<locals>.parser at 0x0000011B84819A20>, 'json_data': {'input': ['can we say this number is distinct?'], 'model': <OpenAIEmbeddingModeModel.TEXT_EMBED_ADA_002: 'text-embedding-ada-002'>, 'encoding_format': 'base64'}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B847E82E0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84703F40> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B84776E90>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:20:35 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'openai-model', b'text-embedding-ada-002'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'20'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'150000'), (b'x-ratelimit-remaining-requests', b'195'), (b'x-ratelimit-remaining-tokens', b'149992'), (b'x-ratelimit-reset-requests', b'30m5.472s'), (b'x-ratelimit-reset-tokens', b'3ms'), (b'x-request-id', b'req_83d57e6d97d5738b06d124960dd3e3b4'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ecedcbbc4d799-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/embeddings "200 OK"
+DEBUG:llama_index.indices.utils:> Top 2 nodes:
+> [Node a248a573-e752-4fa1-aa8c-539fdf8406f0] [Similarity score:             0.742806] 4 KEY HIGHLIGHTS  
+\uf0a8 The total number of active voice subscribers in Q3 2023 was 221,769,883 from...
+> [Node 5197fc19-cee3-4621-b852-3c01433a11f6] [Similarity score:             0.741183] 4 KEY HIGHLIGHTS  
+\uf0a8 The total number of active voice subscribers in Q2 2023 was 220,086,951 from...
+DEBUG:openai._base_client:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': "You are a chatbot, able to have normal interactions, as well as talk about data related to Nigeria. If you are asked anything out of context, just say you don't knowyou were trained on different data from the NBS\nContext information is below.\n--------------------\npage_label: Page 4\nfile_path: data\\Telecoms_Data_Q3_2023.pdf\n\n4 KEY HIGHLIGHTS  \n\uf0a8 The total number of active voice subscribers in Q3 2023 was 221,769,883 from the 212,201,578 reported \nin Q3 2022, indicating a growth rate of 4.51%. On a quarter -on-quarter basis, this rose by 0.76%.  \n\uf0a8 Also, in Q3 2023, the total number of active internet subscribers stood at 160,171,125 from 152,784,980 \nreported in Q3 2022, showing an increase of 4.83%. On a quarter -on-quarter basis, this grew by 0.42%.  \n\uf0a8 On state profile analysis, Lagos state had the highest number of active voice subscribers in Q3 2023 with \n27,043,333, followed by Ogun with 13,136,247 and Kano with 12,192,122. On the other hand, Bayelsa \nrecorded the least with 1,558,509, followed by Gombe and Yobe with 2,643,899 and 2,760,261 respec-\ntively.  \n\uf0a8 In addition, Lagos state had the highest number of active internet subscribers in Q3 2023 with \n19,188,745, followed by Ogun with 9,538,622 and Kano with 8,712,782. On the other hand, Bayelsa rec-\norded the least with 1,195,580, followed by Zamfara and Gombe with 1,863,686 and 1,909,498 respec-\ntively. However, MTN had the highest share of subscriptions in Q3 2023.\n\npage_label: Page 4\nfile_path: data\\Telecoms_Data_Q2_2023.pdf\n\n4 KEY HIGHLIGHTS  \n\uf0a8 The total number of active voice subscribers in Q2 2023 was 220,086,951 from the 206,449,125 reported \nin Q2 2022, indicating a growth rate of 6.61%. On a quarter -on-quarter basis, this declined by 2.69%.  \n\uf0a8 Also, in Q2 2023, the total number of active internet subscribers stood at 159,498,826 from 151,332,090 \nreported in Q2 2022, showing an increase of 5.40%. On a quarter -on-quarter basis, this grew by 1.24%.  \n\uf0a8 On state profile analysis, Lagos state had the highest number of active voice subscribers in Q2 2023 with \n26,423,757, followed by Ogun with 12,976,190 and Kano with 12,129,536. On the other hand, Bayelsa \nrecorded the least with 1,601,675, followed by Ebonyi and Ekiti with 1,911,606 and 1,992,640 respective-\nly.  \n\uf0a8 In addition, Lagos state had the highest number of active internet subscribers in Q2 2023 with \n18,868,376, followed by Ogun with 9,471,170 and Kano with 8,768,199. On the other hand, Bayelsa rec-\norded the least with 1,156,994, followed by Ebonyi and Ekiti with 1,335,968 and 1,512,952 respectively. \nHowever, MTN had the highest share of subscriptions in Q2 2023.\n--------------------\n"}, {'role': 'user', 'content': 'hi'}, {'role': 'assistant', 'content': 'Hello! How can I assist you today?'}, {'role': 'user', 'content': 'hi'}, {'role': 'assistant', 'content': 'Hello again! How can I help you today?'}, {'role': 'user', 'content': 'how much did nigerians spend on data?'}, {'role': 'assistant', 'content': "I don't have specific data on how much Nigerians spent on data. The information I have pertains to fuel prices in Nigeria. If you have any questions related to that, feel free to ask!"}, {'role': 'user', 'content': 'how much was spent on data '}, {'role': 'assistant', 'content': "I'm sorry, but I don't have access to data on how much Nigerians spent on data. My training is focused on information related to fuel prices in Nigeria. If you have any questions about that, feel free to ask!"}, {'role': 'user', 'content': 'how many nigerians own a sim? '}, {'role': 'assistant', 'content': 'In Q3 2023, the total number of active voice subscribers in Nigeria was 221,769,883. This indicates the number of Nigerians who own a SIM card for voice services during that period.'}, {'role': 'user', 'content': 'can we say this number is distinct?'}], 'model': 'gpt-3.5-turbo', 'stream': False, 'temperature': 0.1}}
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+DEBUG:httpcore.connection:connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=60.0 socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B848BD990>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000011B84798840> server_hostname='api.openai.com' timeout=60.0
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000011B848BD690>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Mon, 19 Feb 2024 13:20:38 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-allow-origin', b'*'), (b'Cache-Control', b'no-cache, must-revalidate'), (b'openai-model', b'gpt-3.5-turbo-0125'), (b'openai-organization', b'user-ktegm0hmqbjm1lzjvz4nouvd'), (b'openai-processing-ms', b'2004'), (b'openai-version', b'2020-10-01'), (b'strict-transport-security', b'max-age=15724800; includeSubDomains'), (b'x-ratelimit-limit-requests', b'200'), (b'x-ratelimit-limit-tokens', b'40000'), (b'x-ratelimit-remaining-requests', b'195'), (b'x-ratelimit-remaining-tokens', b'39108'), (b'x-ratelimit-reset-requests', b'30m5.585s'), (b'x-ratelimit-reset-tokens', b'1.338s'), (b'x-request-id', b'req_aefd6e45b67f7fa2188a69b3f97ea888'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Server', b'cloudflare'), (b'CF-RAY', b'857ecee098dcd799-LOS'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+INFO:httpx:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:openai._base_client:HTTP Request: POST https://api.openai.com/v1/chat/completions "200 OK"
+INFO:root:User question: can we say this number is distinct?
+INFO:root:AI response: The total number of active voice subscribers in Q3 2023, which was 221,769,883, represents the total count of active SIM cards for voice services in Nigeria during that period. Each SIM card is counted as a separate subscriber, so this number may not directly correspond to the total number of individual Nigerians who own SIM cards, as some individuals may have multiple SIM cards.
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:20:38] "POST /chat HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\DocumentsC\\Users\\emmau\\Documents\\envs\\recommended-action\\Lib\\logging\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\docstore.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/docstore.json
+DEBUG:llama_index.storage.kvstore.simple_kvstore:Loading llama_index.storage.kvstore.simple_kvstore from ./store\index_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/index_store.json
+DEBUG:llama_index.graph_stores.simple:Loading llama_index.graph_stores.simple from ./store\graph_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/graph_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\default__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/default__vector_store.json
+DEBUG:llama_index.vector_stores.simple:Loading llama_index.vector_stores.simple from ./store\image__vector_store.json.
+DEBUG:fsspec.local:open file: C:/Users/emmau/Downloads/chatbot/store/image__vector_store.json
+INFO:llama_index.indices.loading:Loading all indices.
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.75.25:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 187-745-609
+INFO:werkzeug:127.0.0.1 - - [28/Feb/2024 09:55:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Feb/2024 10:03:19] "[33mGET /swagger/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [28/Feb/2024 10:03:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\emmau\\Downloads\\chatbot\\rag.py', reloading
