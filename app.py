@@ -105,3 +105,5 @@ def chat():
     return jsonify({'response': response, 'messages': messages})
 
 
+if __name__ == '__main__':
+    app.run(debug=debug_mode, host=host_no, port=port_no)
