@@ -1,0 +1,131 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "NBS Chatbot API",
+      "description": "An API for interacting with a National Bureau of Statistics chatbot.",
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:5000",
+        "description": "Local development server"
+      }
+    ],
+    "paths": {
+      "/": {
+        "get": {
+          "summary": "Home Page",
+          "responses": {
+            "200": {
+              "description": "Rendered HTML of home page"
+            }
+          }
+        }
+      },
+      "/chat": {
+        "post": {
+          "summary": "Chat with the NBS chatbot",
+          "parameters": [
+            {
+              "name": "Username",
+              "in": "query",
+              "description": "The username of the user interacting with the chatbot",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "input": {
+                      "type": "string",
+                      "description": "The user's input message"
+                    }
+                  },
+                  "required": ["input"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Response from the chatbot",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ChatbotResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/history": {  
+        "get": {
+          "summary": "Retrieve chat history for a user",
+          "parameters": [
+            {
+              "name": "Username",
+              "in": "query",
+              "description": "The username of the user",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Chat history successfully retrieved",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/ChatbotResponse"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "ChatbotResponse": {
+          "type": "object",
+          "properties": {
+            "response": {
+              "type": "string",
+              "description": "The chatbot's response to the user"
+            },
+            "messages": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "role": {
+                    "type": "string",
+                    "description": "The role of the message (user or ai)"
+                  },
+                  "content": {
+                    "type": "string",
+                    "description": "The content of the message"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
